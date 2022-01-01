@@ -5,7 +5,7 @@ import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 import { RootTabScreenProps } from '../types';
 import {Avatar} from '../src/Areas/Common/components/index'; 
-import {Loading} from '../src/Areas/Common/components/index'
+import {Tooltip} from '../src/Areas/Common/components/index'
 import {margin} from '../src/Areas/Common/components/config/spacing';
 
 export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
@@ -19,8 +19,9 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
         rounded
       >   
       </Avatar>
-      
-      <Loading visible={false} />
+      <Tooltip height={100} width={200} >
+        <Text>Press me</Text>
+      </Tooltip>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <EditScreenInfo path="/screens/TabOneScreen.tsx" />
     </View>

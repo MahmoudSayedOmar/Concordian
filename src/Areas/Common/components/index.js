@@ -31,7 +31,7 @@ import Tile from './tile/Tile';
 import Avatar from './avatar/Avatar';
 import Header from './header/Header';
 import PricingCard from './pricing/PricingCard';
-//import Tooltip from './tooltip/Tooltip';
+import Tooltip from './tooltip/Tooltip';
 
 // import {
 //   AirbnbRating as BaseAirbnbRating,
@@ -59,7 +59,7 @@ export {
   Modal,
   ListItem,
   PricingCard,
-  //Tooltip,
+  Tooltip,
   SocialIcon,
   Text,
   ThemedView,
