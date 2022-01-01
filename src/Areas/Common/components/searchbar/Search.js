@@ -13,8 +13,7 @@ import {
 import Text from '../text/Text';
 import Input from '../input/Input';
 import Icon from '../icons/Icon';
-import ViewPropTypes from 'src/components/config/ViewPropTypes';
-
+import ViewPropTypes from '../config/ViewPropTypes'
 import {withTheme} from '../config';
 import {renderNode, nodeType} from '../helpers';
 import {grey5, grey4} from '../config/colors';

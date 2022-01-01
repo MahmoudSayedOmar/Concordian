@@ -4,8 +4,8 @@ import { StyleSheet } from 'react-native';
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 import { RootTabScreenProps } from '../types';
-import Avatar from '../src/Areas/Common/components/avatar/Avatar'; 
-import SocialIcon from '../src/Areas/Common/components/social/SocialIcon'
+import {Avatar} from '../src/Areas/Common/components/index'; 
+import {Loading} from '../src/Areas/Common/components/index'
 import {margin} from '../src/Areas/Common/components/config/spacing';
 
 export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
@@ -15,17 +15,12 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
       <Text style={styles.title}>Tab One</Text>
       <Avatar
         source={require('../assets/images/favicon.png')}
-        size={60}
+        size={50}
         rounded
       >   
       </Avatar>
-      <SocialIcon
-                  light
-                  raised={false}
-                  type={'facebook'}
-                  style={styles.socialIconStyle}
-                  iconSize={15}
-                />
+      
+      <Loading visible={false} />
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <EditScreenInfo path="/screens/TabOneScreen.tsx" />
     </View>
