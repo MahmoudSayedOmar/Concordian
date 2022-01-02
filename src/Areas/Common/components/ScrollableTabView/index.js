@@ -1,13 +1,13 @@
-import React from "react";
-import { StyleSheet, ScrollView, View } from "react-native";
-import ScrollableTabView from "react-native-scrollable-tab-view";
-import Text from "../text/Text";
-import ItemTab from "./ItemTab";
+import React from 'react';
+import {StyleSheet, ScrollView, View} from 'react-native';
+import ScrollableTabView from 'react-native-scrollable-tab-view';
+import Text from '../Text';
+import ItemTab from './ItemTab';
 
-import { margin } from "../config/spacing";
+import {margin} from '../config/spacing';
 
 class ScrollableTabViewComponent extends React.Component {
-  renderTabBar = ({ goToPage, tabs, activeTab }) => {
+  renderTabBar = ({goToPage, tabs, activeTab}) => {
     if (tabs.length < 1) {
       return <Text>data null</Text>;
     }
@@ -33,13 +33,12 @@ class ScrollableTabViewComponent extends React.Component {
     );
   };
   render() {
-    const { children, ...rest } = this.props;
+    const {children, ...rest} = this.props;
     return (
       <ScrollableTabView
         tabBarUnderlineStyle={styles.scroll}
         renderTabBar={this.renderTabBar}
-        {...rest}
-      >
+        {...rest}>
         {children}
       </ScrollableTabView>
     );
@@ -49,7 +48,7 @@ class ScrollableTabViewComponent extends React.Component {
 const styles = StyleSheet.create({
   scroll: {
     height: 0,
-    backgroundColor: "transparent",
+    backgroundColor: 'transparent',
   },
   viewTab: {
     height: 40,
@@ -57,7 +56,7 @@ const styles = StyleSheet.create({
   },
   viewListTab: {
     marginHorizontal: margin.large,
-    flexDirection: "row",
+    flexDirection: 'row',
   },
 });
 

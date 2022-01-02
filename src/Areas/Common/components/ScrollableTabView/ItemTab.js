@@ -1,11 +1,11 @@
 // @flow
 
-import React from "react";
-import { StyleSheet, TouchableOpacity } from "react-native";
-import { withTheme } from "react-native-elements";
-import Text from "../text/Text";
+import React from 'react';
+import {StyleSheet, TouchableOpacity} from 'react-native';
+import {withTheme} from 'react-native-elements';
+import Text from '../Text';
 
-import { padding, borderRadius } from "../config/spacing";
+import {padding, borderRadius} from 'src/styles/spacing';
 
 type Props = {
   visit: number,
@@ -17,7 +17,7 @@ type Props = {
   goToPage: (visit: number) => {},
 };
 const ItemTab = (props: Props) => {
-  const { theme, visit, activeVisit, title, start, middle, end, goToPage } =
+  const {theme, visit, activeVisit, title, start, middle, end, goToPage} =
     props;
 
   return (
@@ -35,9 +35,8 @@ const ItemTab = (props: Props) => {
           backgroundColor: theme.colors.primary,
         },
       ]}
-      onPress={() => goToPage(visit)}
-    >
-      <Text medium color={visit === activeVisit && "bgColor"}>
+      onPress={() => goToPage(visit)}>
+      <Text medium color={visit === activeVisit && 'bgColor'}>
         {title}
       </Text>
     </TouchableOpacity>
@@ -51,8 +50,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: padding.big,
     borderTopWidth: 1,
     borderBottomWidth: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   start: {
     borderTopLeftRadius: borderRadius.base,

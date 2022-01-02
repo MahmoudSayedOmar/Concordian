@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import deepmerge from "deepmerge";
+import React from 'react';
+import PropTypes from 'prop-types';
+import deepmerge from 'deepmerge';
 
 const ThemeContext = React.createContext();
 
@@ -13,8 +13,8 @@ export default class ThemeProvider extends React.Component {
     };
   }
 
-  updateTheme = (updates) => {
-    this.setState(({ theme }) => ({
+  updateTheme = updates => {
+    this.setState(({theme}) => ({
       theme: deepmerge(theme, updates),
     }));
   };
@@ -23,12 +23,12 @@ export default class ThemeProvider extends React.Component {
 
   componentDidUpdate(prevProps) {
     const prevTheme = prevProps.theme;
-    const { theme } = this.props;
+    const {theme} = this.props;
     if (prevTheme.key !== theme.key) {
       this.setTheme(theme);
     }
   }
-  setTheme = (theme) => {
+  setTheme = theme => {
     this.setState({
       theme,
     });
@@ -40,8 +40,7 @@ export default class ThemeProvider extends React.Component {
         value={{
           theme: this.state.theme,
           updateTheme: this.updateTheme,
-        }}
-      >
+        }}>
         {this.props.children}
       </ThemeContext.Provider>
     );

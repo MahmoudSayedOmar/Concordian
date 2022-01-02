@@ -1,0 +1,141 @@
+import React from "react";
+import { connect } from "react-redux";
+import { withTranslation } from "react-i18next";
+import { StyleSheet, ScrollView, View } from "react-native";
+import {
+  Header,
+  Text,
+  ThemedView,
+  ThemeConsumer,
+} from "../../Areas/Common/components";
+import Input from "../../containers/input/Input";
+import Container from "../../containers/Container";
+import Button from "../../containers/Button";
+import TextHtml from "../../containers/TextHtml";
+import {
+  TextHeader,
+  IconHeader,
+  CartIcon,
+} from "../../containers/HeaderComponent";
+
+import { changePassword } from "../../modules/auth/actions";
+import { authSelector } from "../../modules/auth/selectors";
+
+import { margin } from "../../Areas/Common/components/config/spacing";
+import { lineHeights } from "../../Areas/Common/components/config/fonts";
+
+import { changeColor } from "../../utils/text-html";
+
+class ChangePasswordScreen extends React.Component {
+  static navigationOptions = {
+    headerShown: false,
+  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      password_old: "",
+      password_new: "",
+      password_confirm: "",
+    };
+  }
+  handleChangePassword = () => {
+    this.props.dispatch(changePassword(this.state));
+  };
+
+  render() {
+    const {
+      t,
+      auth: { pendingChangePassword, changePasswordError },
+    } = this.props;
+    const { password_old, password_new, password_confirm } = this.state;
+
+    const { message, errors } = changePasswordError;
+
+    return (
+      <ThemeConsumer>
+        {({ theme }) => (
+          <ThemedView isFullView>
+            <Header
+              leftComponent={<IconHeader />}
+              centerComponent={<TextHeader title={t("common:text_password")} />}
+              rightComponent={<CartIcon />}
+            />
+            <ScrollView>
+              <Container>
+                {message ? (
+                  <TextHtml
+                    value={message}
+                    style={changeColor(theme.colors.error)}
+                  />
+                ) : null}
+                <View style={styles.marginBig}>
+                  <Input
+                    label={t("profile:text_input_old_pass")}
+                    value={password_old}
+                    onChangeText={(value) =>
+                      this.setState({ password_old: value })
+                    }
+                    secureTextEntry
+                    error={errors && errors.password_old}
+                  />
+                  <Input
+                    label={t("profile:text_input_new_pass")}
+                    value={password_new}
+                    onChangeText={(value) =>
+                      this.setState({ password_new: value })
+                    }
+                    secureTextEntry
+                    error={errors && errors.password_new}
+                  />
+                  <Input
+                    label={t("profile:text_input_confirm_pass")}
+                    value={password_confirm}
+                    onChangeText={(value) =>
+                      this.setState({ password_confirm: value })
+                    }
+                    secureTextEntry
+                    error={errors && errors.password_confirm}
+                  />
+                </View>
+                <Text
+                  colorSecondary
+                  style={[styles.marginBig, styles.description]}
+                >
+                  {t("profile:text_password_description")}
+                </Text>
+                <Button
+                  title={t("profile:text_button_password")}
+                  containerStyle={styles.marginBig}
+                  onPress={this.handleChangePassword}
+                  loading={pendingChangePassword}
+                />
+              </Container>
+            </ScrollView>
+          </ThemedView>
+        )}
+      </ThemeConsumer>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  marginBig: {
+    marginBottom: margin.big,
+  },
+  description: {
+    lineHeight: lineHeights.h4,
+  },
+});
+
+const mapStateToProps = (state) => {
+  return {
+    auth: authSelector(state),
+  };
+};
+
+export default connect(mapStateToProps)(
+  withTranslation()(ChangePasswordScreen)
+);
