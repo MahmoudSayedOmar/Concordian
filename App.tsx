@@ -19,9 +19,46 @@ import {tokenSelector} from './src/modules/auth/selectors';
 import demoConfig from './src/utils/demo';
 import globalConfig from './src/utils/global';
 
+import { FontAwesome } from '@expo/vector-icons';
+import * as Font from 'expo-font';
+import * as SplashScreen from 'expo-splash-screen';
+
 const {store, persistor} = configureStore();
+
 class App extends Component {
+  state = {
+    fontsLoaded: false,
+  };
+  async loadFonts() {
+    try {
+      SplashScreen.preventAutoHideAsync();
+  
+      // Load fonts
+      await Font.loadAsync({
+        'space-mono': require('./assets/fonts/SpaceMono-Regular.ttf'),
+        'Poppins-Light': require('./assets/fonts/Poppins-Light.ttf'),
+        'Poppins-Regular': require('./assets/fonts/Poppins-Regular.ttf'),
+        'Poppins-Medium': require('./assets/fonts/Poppins-Medium.ttf'),
+        'Poppins-SemiBold': require('./assets/fonts/Poppins-SemiBold.ttf'),
+
+      });
+     
+    } catch (e) {
+      // We might want to provide this error information to an error reporting service
+      console.warn(e);
+      return false;
+    } finally {
+      SplashScreen.hideAsync();
+      this.setState({ fontsLoaded: true });
+    }
+  }
+
   componentDidMount() {
+
+
+    this.loadFonts();
+
+
     OneSignal.setAppId(APP_ID);
 
     // O N E S I G N A L   S E T U P
@@ -77,7 +114,10 @@ class App extends Component {
   }
 
   render() {
+    if (this.state.fontsLoaded) {
+
     return (
+      
       <NavigationContainer
         ref={navigationRef =>
           NavigationService.setTopLevelNavigator(navigationRef)
@@ -90,7 +130,10 @@ class App extends Component {
           </Provider>
         </SafeAreaProvider>
       </NavigationContainer>
-    );
+    );}
+    else {
+      return null;
+    }
   }
 }
 
