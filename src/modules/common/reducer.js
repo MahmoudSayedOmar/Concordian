@@ -6,7 +6,7 @@ import apiConfig from "../../config/api";
 import { DEFAULT_LANGUAGE_CODE } from "./constants";
 import i18n from "../../config-i18n";
 import { I18nManager } from "react-native";
-import RNRestart from "react-native-restart";
+import { Restart } from "fiction-expo-restart";
 
 const siteConfig = {
   timezone_string: "Asia/Karachi",
@@ -197,8 +197,9 @@ function reloadApp(language) {
   I18nManager.forceRTL(isRTL);
   // Reload
   if (isRTL !== I18nManager.isRTL) {
-    RNRestart.Restart();
+    //RNRestart.Restart();
     // Updates.reloadFromCache(); // For expo
+    Restart();
   }
 }
 

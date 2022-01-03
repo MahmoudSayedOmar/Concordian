@@ -15,7 +15,10 @@ const Tab = createBottomTabNavigator();
 
 export default function HomeTabs() {
   return (
-    <Tab.Navigator tabBar={(props) => <Tabbar {...props} />}>
+    <Tab.Navigator
+      screenOptions={{ headerShown: false }}
+      tabBar={(props) => <Tabbar {...props} />}
+    >
       <Tab.Screen name={homeTabs.home_drawer} component={HomeDrawer} />
       <Tab.Screen name={homeTabs.shop} component={Category} />
       <Tab.Screen name={homeTabs.wish_list} component={Wishlist} />

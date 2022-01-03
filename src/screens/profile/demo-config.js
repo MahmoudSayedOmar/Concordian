@@ -1,6 +1,6 @@
 import React from "react";
 
-import RNRestart from "react-native-restart";
+import { Restart } from "fiction-expo-restart";
 import { connect } from "react-redux";
 
 import {
@@ -65,7 +65,7 @@ class DemoConfig extends React.Component {
         type: "success",
       });
 
-      setTimeout(() => RNRestart.Restart(), 2000);
+      setTimeout(() => Restart(), 2000);
     } catch (e) {
       this.setState({ loading: false });
       showMessage({
@@ -91,7 +91,7 @@ class DemoConfig extends React.Component {
       type: "success",
     });
 
-    setTimeout(() => RNRestart.Restart(), 2000);
+    setTimeout(() => Restart(), 2000);
   };
 
   onChange = (key, value) => {

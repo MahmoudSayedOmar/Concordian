@@ -5,7 +5,7 @@ import { compose } from "redux";
 import { connect } from "react-redux";
 import { withTranslation } from "react-i18next";
 import upperCase from "lodash/upperCase";
-import RNRestart from "react-native-restart";
+import { Restart } from "fiction-expo-restart";
 import isEmpty from "lodash/isEmpty";
 
 import { ScrollView, StyleSheet, Image, View, I18nManager } from "react-native";
@@ -51,8 +51,9 @@ class Language extends Component<Props> {
     I18nManager.forceRTL(isRTL);
     // Reload
     if (isRTL !== I18nManager.isRTL) {
-      RNRestart.Restart();
+      // RNRestart.Restart();
       // Updates.reloadFromCache(); // For expo
+      Restart();
     }
   }
 
