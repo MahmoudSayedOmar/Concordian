@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import OneSignal from 'react-native-onesignal';
+//import OneSignal from 'react-native-onesignal';
 import {NavigationContainer} from '@react-navigation/native';
 
 import {APP_ID} from './src/config/onesignal';
@@ -59,48 +59,48 @@ class App extends Component {
     this.loadFonts();
 
 
-    OneSignal.setAppId(APP_ID);
+    // OneSignal.setAppId(APP_ID);
 
-    // O N E S I G N A L   S E T U P
-    OneSignal.setLogLevel(6, 0);
-    OneSignal.setRequiresUserPrivacyConsent(false);
-    OneSignal.promptForPushNotificationsWithUserResponse(response => {
-      console.log('Prompt response:', response);
-    });
+    // // O N E S I G N A L   S E T U P
+    // OneSignal.setLogLevel(6, 0);
+    // OneSignal.setRequiresUserPrivacyConsent(false);
+    // OneSignal.promptForPushNotificationsWithUserResponse(response => {
+    //   console.log('Prompt response:', response);
+    // });
 
-    /* O N E S I G N A L  H A N D L E R S */
-    OneSignal.setNotificationWillShowInForegroundHandler(notifReceivedEvent => {
-      console.log(
-        'OneSignal: notification will show in foreground:',
-        notifReceivedEvent,
-      );
-      // let notif = notifReceivedEvent.getNotification();
+    // /* O N E S I G N A L  H A N D L E R S */
+    // OneSignal.setNotificationWillShowInForegroundHandler(notifReceivedEvent => {
+    //   console.log(
+    //     'OneSignal: notification will show in foreground:',
+    //     notifReceivedEvent,
+    //   );
+    //   // let notif = notifReceivedEvent.getNotification();
 
-      // const button1 = {
-      //   text: "Cancel",
-      //   onPress: () => { notifReceivedEvent.complete(); },
-      //   style: "cancel"
-      // };
+    //   // const button1 = {
+    //   //   text: "Cancel",
+    //   //   onPress: () => { notifReceivedEvent.complete(); },
+    //   //   style: "cancel"
+    //   // };
 
-      // const button2 = { text: "Complete", onPress: () => { notifReceivedEvent.complete(notif); } };
+    //   // const button2 = { text: "Complete", onPress: () => { notifReceivedEvent.complete(notif); } };
 
-      // Alert.alert("Complete notification?", "Test", [button1, button2], { cancelable: true });
-    });
-    OneSignal.setNotificationOpenedHandler(notification => {
-      console.log('OneSignal: notification opened:', notification);
-    });
-    OneSignal.setInAppMessageClickHandler(event => {
-      console.log('OneSignal IAM clicked:', event);
-    });
-    OneSignal.addEmailSubscriptionObserver(event => {
-      console.log('OneSignal: email subscription changed: ', event);
-    });
-    OneSignal.addSubscriptionObserver(event => {
-      console.log('OneSignal: subscription changed:', event);
-    });
-    OneSignal.addPermissionObserver(event => {
-      console.log('OneSignal: permission changed:', event);
-    });
+    //   // Alert.alert("Complete notification?", "Test", [button1, button2], { cancelable: true });
+    // });
+    // OneSignal.setNotificationOpenedHandler(notification => {
+    //   console.log('OneSignal: notification opened:', notification);
+    // });
+    // OneSignal.setInAppMessageClickHandler(event => {
+    //   console.log('OneSignal IAM clicked:', event);
+    // });
+    // OneSignal.addEmailSubscriptionObserver(event => {
+    //   console.log('OneSignal: email subscription changed: ', event);
+    // });
+    // OneSignal.addSubscriptionObserver(event => {
+    //   console.log('OneSignal: subscription changed:', event);
+    // });
+    // OneSignal.addPermissionObserver(event => {
+    //   console.log('OneSignal: permission changed:', event);
+    // });
 
     store.subscribe(() => {
       const state = store.getState();
@@ -110,7 +110,7 @@ class App extends Component {
   }
 
   componentWillUnmount() {
-    OneSignal.clearHandlers();
+   // OneSignal.clearHandlers();
   }
 
   render() {

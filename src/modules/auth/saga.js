@@ -5,7 +5,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { put, call, select, takeEvery } from "redux-saga/effects";
 import { showMessage } from "react-native-flash-message";
 import { handleError } from "../../utils/error";
-import OneSignal from "react-native-onesignal";
+//import OneSignal from "react-native-onesignal";
 
 import languages from "../../locales";
 
@@ -100,7 +100,7 @@ function* doLoginSuccess(token, user = {}, method = "email") {
   yield call(AsyncStorage.setItem, "token", token);
   yield call(AsyncStorage.setItem, "method", method);
 
-  OneSignal.sendTag("user_id", user.ID);
+  // OneSignal.sendTag("user_id", user.ID);
 }
 
 /**
