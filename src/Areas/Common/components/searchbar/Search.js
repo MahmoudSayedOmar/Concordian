@@ -47,17 +47,17 @@ class Search extends React.Component<Props> {
   };
 
   blur = () => {
-    this.input.blur();
+    this.props.onBlur();
   };
 
   clear = () => {
-    this.input.clear();
-    this.onChangeText("");
-    this.props.onClear();
-  };
+    //this.input.clear();
+    this.props.onChangeText("");
+    this.props.onClear(); 
+   };
 
   cancel = () => {
-    this.blur();
+    this.props.onBlur();
     this.props.onCancel();
   };
 
@@ -116,7 +116,7 @@ class Search extends React.Component<Props> {
           onBlur={this.onBlur}
           onChangeText={this.onChangeText}
           ref={(input) => {
-            this.input = input;
+            this.props.input = input;
           }}
           inputStyle={StyleSheet.flatten([styles.input(theme), inputStyle])}
           containerStyle={[
