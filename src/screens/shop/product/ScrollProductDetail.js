@@ -3,18 +3,11 @@ import { useNavigation } from "@react-navigation/native";
 
 import { Animated, Platform, StyleSheet, View, Dimensions } from "react-native";
 
-import {
-  Header,
-  ThemedView,
-  withTheme,
-} from "../../../Areas/Common/components";
+import { Header, ThemedView, withTheme } from "../../../components";
 import { CartIcon, IconHeader } from "../../../containers/HeaderComponent";
 
-import { black } from "../../../Areas/Common/components/config/colors";
-import fonts, {
-  sizes,
-  lineHeights,
-} from "../../../Areas/Common/components/config/fonts";
+import { black } from "../../../components/config/colors";
+import fonts, { sizes, lineHeights } from "../../../components/config/fonts";
 import { getStatusBarHeight } from "react-native-status-bar-height";
 
 const { width } = Dimensions.get("window");

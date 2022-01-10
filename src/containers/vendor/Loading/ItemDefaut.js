@@ -1,8 +1,8 @@
 // @flow
 import * as React from "react";
 import { ViewPropTypes } from "react-native";
-import { ThemedView } from "../../../Areas/Common/components";
-import { borderRadius } from "../../../Areas/Common/components/config/spacing";
+import { ThemedView } from "../../../components";
+import { borderRadius } from "../../../components/config/spacing";
 
 type Props = {
   style?: ViewPropTypes,

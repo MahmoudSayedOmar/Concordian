@@ -1,14 +1,10 @@
 import React from "react";
 
 import { StyleSheet, View, TouchableOpacity } from "react-native";
-import { withTheme, Avatar } from "../Areas/Common/components";
+import { withTheme, Avatar } from "../components";
 
-import { white } from "../Areas/Common/components/config/colors";
-import {
-  padding,
-  margin,
-  borderRadius,
-} from "../Areas/Common/components/config/spacing";
+import { white } from "../components/config/colors";
+import { padding, margin, borderRadius } from "../components/config/spacing";
 
 const ChooseItem = function (props) {
   const {

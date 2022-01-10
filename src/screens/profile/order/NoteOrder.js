@@ -1,13 +1,13 @@
 import React from "react";
 import { StyleSheet, ActivityIndicator } from "react-native";
-import { Text, ThemedView } from "../../../Areas/Common/components";
+import { Text, ThemedView } from "../../../components";
 
 import fetch from "../../../utils/fetch";
 import {
   borderRadius,
   margin,
   padding,
-} from "../../../Areas/Common/components/config/spacing";
+} from "../../../components/config/spacing";
 
 import { strDate2 } from "./config";
 

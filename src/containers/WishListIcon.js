@@ -2,8 +2,8 @@ import React from "react";
 
 import { connect } from "react-redux";
 
-import { Icon } from "../Areas/Common/components";
-import { grey4, black } from "../Areas/Common/components/config/colors";
+import { Icon } from "../components";
+import { grey4, black } from "../components/config/colors";
 
 import { addWishList, removeWishList } from "../modules/common/actions";
 import { configsSelector } from "../modules/common/selectors";

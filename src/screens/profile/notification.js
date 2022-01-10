@@ -2,13 +2,7 @@ import React from "react";
 
 import { StyleSheet, ScrollView } from "react-native";
 
-import {
-  Header,
-  Text,
-  ListItem,
-  ThemedView,
-  Avatar,
-} from "../../Areas/Common/components";
+import { Header, Text, ListItem, ThemedView, Avatar } from "../../components";
 import Container from "../../containers/Container";
 import Button from "../../containers/Button";
 import {
@@ -16,13 +10,8 @@ import {
   CartIcon,
   IconHeader,
 } from "../../containers/HeaderComponent";
-import { margin, padding } from "../../Areas/Common/components/config/spacing";
-import {
-  red,
-  green,
-  blue,
-  white,
-} from "../../Areas/Common/components/config/colors";
+import { margin, padding } from "../../components/config/spacing";
+import { red, green, blue, white } from "../../components/config/colors";
 
 const data = {
   id: "8",

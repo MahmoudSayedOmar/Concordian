@@ -103,18 +103,18 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 import { StyleSheet, ScrollView, View } from "react-native";
-import { Text, Button } from "../../../Areas/Common/components";
+import { Text, Button } from "../../../components";
 import OpacityView from "../../../containers/OpacityView";
 import FooterOrderInfo from "./FooterOrderInfo";
 import AvatarOrderInfo from "./AvatarOrderInfo";
 
 import currencyFormatter from "../../../utils/currency-formatter";
-import { orange, blue } from "../../../Areas/Common/components/config/colors";
+import { orange, blue } from "../../../components/config/colors";
 import {
   margin,
   padding,
   borderRadius,
-} from "../../../Areas/Common/components/config/spacing";
+} from "../../../components/config/spacing";
 
 const OrderInfo = (props) => {
   const { totals, currency, processCheckout, checkoutLoading } = props;

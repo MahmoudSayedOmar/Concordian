@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { fromJS } from "immutable";
 import { withTranslation } from "react-i18next";
 import { StyleSheet } from "react-native";
-import { Text, ListItem } from "../../Areas/Common/components";
+import { Text, ListItem } from "../../components";
 import Container from "../../containers/Container";
 import RadioIcon from "./containers/RadioIcon";
 import ViewRefine from "./containers/ViewRefine";
@@ -21,7 +21,7 @@ import {
   fetchProducts,
 } from "../../modules/product/actions";
 
-import { margin } from "../../Areas/Common/components/config/spacing";
+import { margin } from "../../components/config/spacing";
 
 class RefineScreen extends React.Component {
   static navigationOptions = {

@@ -2,7 +2,7 @@ import React from "react";
 
 import { StyleSheet, View } from "react-native";
 
-import { margin } from "../Areas/Common/components/config/spacing";
+import { margin } from "../components/config/spacing";
 
 const Separator = function ({ style, small, large, big, ...rest }) {
   return (

@@ -2,16 +2,13 @@ import React from "react";
 import { connect } from "react-redux";
 
 import { StyleSheet, View } from "react-native";
-import { Text, withTheme } from "../../../Areas/Common/components";
+import { Text, withTheme } from "../../../components";
 
 import { getVariationId } from "../../../modules/product/service";
 import currencyFormatter from "../../../utils/currency-formatter";
 
-import { grey4 } from "../../../Areas/Common/components/config/colors";
-import {
-  margin,
-  padding,
-} from "../../../Areas/Common/components/config/spacing";
+import { grey4 } from "../../../components/config/colors";
+import { margin, padding } from "../../../components/config/spacing";
 import { languageSelector } from "../../../modules/common/selectors";
 
 class ProductItemOrder extends React.Component {

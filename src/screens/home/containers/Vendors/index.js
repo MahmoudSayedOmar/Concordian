@@ -17,7 +17,7 @@ import { languageSelector } from "../../../../modules/common/selectors";
 import { getVendors } from "../../../../modules/vendor/service";
 import { fetchVendorDetailSuccess } from "../../../../modules/vendor/actions";
 
-import { padding } from "../../../../Areas/Common/components/config/spacing";
+import { padding } from "../../../../components/config/spacing";
 
 const initHeader = {
   style: {},

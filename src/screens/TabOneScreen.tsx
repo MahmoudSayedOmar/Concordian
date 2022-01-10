@@ -5,20 +5,20 @@ import {Image} from 'react-native';
 import EditScreenInfo from "../../components/EditScreenInfo";
 import { Text, View } from "../../components/Themed";
 import { RootTabScreenProps } from "../../types";
-import ScrollableTabViewComponent from "../../src/Areas/Common/components/ScrollableTabView/index";
-import ThemedPricingCard, {PricingCard} from "../../src/Areas/Common/components/pricing/PricingCard";
+import ScrollableTabViewComponent from "../components/ScrollableTabView/index";
+import ThemedPricingCard, {PricingCard} from "../components/pricing/PricingCard";
 
 
-import { margin } from "../../src/Areas/Common/components/config/spacing";
+import { margin } from "../components/config/spacing";
 import {
   darkColors,
   getThemeLight,
-} from "../../src/Areas/Common/components/config/colors";
+} from "../components/config/colors";
 import fonts, {
   lineHeights,
   sizes,
-} from "../../src/Areas/Common/components/config/fonts";
-import { ThemeProvider } from "../../src/Areas/Common/components/config";
+} from "../components/config/fonts";
+import { ThemeProvider } from "../components/config";
 
 export default function TabOneScreen({ navigation, theme, colors }: any) {
   const themeColor = theme === "light" ? getThemeLight(colors) : darkColors;

@@ -9,7 +9,7 @@ import {
   Dimensions,
   Platform,
 } from "react-native";
-import { ThemedView } from "../../Areas/Common/components";
+import { ThemedView } from "../../components";
 import Steps from "../../containers/Steps";
 import Shipping from "./containers/Shipping";
 import Payment from "./containers/Payment";
@@ -18,7 +18,7 @@ import Done from "./containers/Done";
 import { fetchPaymentGateways } from "../../modules/common/actions";
 import { getShippingMethods } from "../../modules/checkout/actions";
 
-import { padding } from "../../Areas/Common/components/config/spacing";
+import { padding } from "../../components/config/spacing";
 import { homeTabs } from "../../config/navigator";
 
 const { width } = Dimensions.get("window");

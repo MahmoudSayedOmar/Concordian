@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { StyleSheet, FlatList, TouchableOpacity } from "react-native";
-import { Text, Avatar, ThemeConsumer } from "../../../Areas/Common/components";
+import { Text, Avatar, ThemeConsumer } from "../../../components";
 import Container from "../../../containers/Container";
-import { margin } from "../../../Areas/Common/components/config/spacing";
+import { margin } from "../../../components/config/spacing";
 
 const users = [
   {

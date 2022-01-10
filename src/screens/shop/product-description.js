@@ -4,15 +4,11 @@ import { ScrollView } from "react-native";
 
 import HTMLView from "react-native-htmlview";
 import WebView from "react-native-webview";
-import {
-  Header,
-  ThemedView,
-  ThemeConsumer,
-} from "../../Areas/Common/components";
+import { Header, ThemedView, ThemeConsumer } from "../../components";
 import Container from "../../containers/Container";
 import { TextHeader, IconHeader } from "../../containers/HeaderComponent";
 
-import fonts, { lineHeights } from "../../Areas/Common/components/config/fonts";
+import fonts, { lineHeights } from "../../components/config/fonts";
 import { ENABLE_WEBVIEW } from "../../config/product-description";
 
 class ProductDescription extends Component {

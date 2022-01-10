@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import unescape from "lodash/unescape";
 import { withTranslation } from "react-i18next";
 
-import { ListItem } from "../../Areas/Common/components";
+import { ListItem } from "../../components";
 import Container from "../../containers/Container";
 import ViewRefine from "./containers/ViewRefine";
 

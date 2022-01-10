@@ -21,7 +21,7 @@ import {
   Text,
   ThemedView,
   ThemeConsumer,
-} from "../../Areas/Common/components";
+} from "../../components";
 import Container from "../../containers/Container";
 import TextHtml from "../../containers/TextHtml";
 import Empty from "../../containers/Empty";
@@ -32,11 +32,7 @@ import { defaultPropsData, getSingleData } from "../../hoc/single-data";
 import { withLoading } from "../../hoc/loading";
 
 import { timeAgo } from "../../utils/time";
-import {
-  padding,
-  margin,
-  borderRadius,
-} from "../../Areas/Common/components/config/spacing";
+import { padding, margin, borderRadius } from "../../components/config/spacing";
 import { changeLineHeight, changeColor } from "../../utils/text-html";
 
 import { mainStack } from "../../config/navigator";

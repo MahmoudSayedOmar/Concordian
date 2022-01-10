@@ -10,8 +10,8 @@ import ItemProduct from "./ItemProduct";
 import ItemProductLoading from "./ItemProductLoading";
 import ModalFilter from "./ModalFilter";
 
-import { green } from "../../../Areas/Common/components/config/colors";
-import { margin } from "../../../Areas/Common/components/config/spacing";
+import { green } from "../../../components/config/colors";
+import { margin } from "../../../components/config/spacing";
 import { getProducts } from "../../../modules/product/service";
 import { prepareProductItem } from "../../../utils/product";
 import {

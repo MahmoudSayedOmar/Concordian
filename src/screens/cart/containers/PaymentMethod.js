@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import merge from "lodash/merge";
 
 import { View, Image, Dimensions, ScrollView, StyleSheet } from "react-native";
-import { Text, ThemeConsumer } from "../../../Areas/Common/components";
+import { Text, ThemeConsumer } from "../../../components";
 import ChooseItem from "../../../containers/ChooseItem";
 import TextHtml from "../../../containers/TextHtml";
 import Heading from "../../../containers/Heading";
@@ -14,8 +14,8 @@ import {
   borderRadius,
   margin,
   padding,
-} from "../../../Areas/Common/components/config/spacing";
-import { lineHeights } from "../../../Areas/Common/components/config/fonts";
+} from "../../../components/config/spacing";
+import { lineHeights } from "../../../components/config/fonts";
 import { changeColor, changeLineHeight } from "../../../utils/text-html";
 
 const width = Dimensions.get("window").width;

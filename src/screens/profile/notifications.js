@@ -1,12 +1,7 @@
 import React from "react";
 import truncate from "lodash/truncate";
 import { StyleSheet, View, FlatList } from "react-native";
-import {
-  Header,
-  ListItem,
-  ThemedView,
-  Avatar,
-} from "../../Areas/Common/components";
+import { Header, ListItem, ThemedView, Avatar } from "../../components";
 import {
   TextHeader,
   IconHeader,
@@ -15,13 +10,8 @@ import {
 import Container from "../../containers/Container";
 import { Dot } from "../../containers/Pagination";
 
-import {
-  red,
-  green,
-  blue,
-  grey3,
-} from "../../Areas/Common/components/config/colors";
-import { margin, padding } from "../../Areas/Common/components/config/spacing";
+import { red, green, blue, grey3 } from "../../components/config/colors";
+import { margin, padding } from "../../components/config/spacing";
 import { mainStack } from "../../config/navigator";
 
 const data = [

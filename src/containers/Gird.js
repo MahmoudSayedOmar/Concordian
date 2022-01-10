@@ -1,7 +1,7 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
 
-import { padding } from "../Areas/Common/components/config/spacing";
+import { padding } from "../components/config/spacing";
 
 const Row = ({ children, style }) => (
   <View style={StyleSheet.flatten([styles.row, style])}>{children}</View>

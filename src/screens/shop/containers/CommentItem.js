@@ -1,7 +1,7 @@
 import React from "react";
 import merge from "lodash/merge";
 import { StyleSheet } from "react-native";
-import { withTheme, Avatar, Text } from "../../../Areas/Common/components";
+import { withTheme, Avatar, Text } from "../../../components";
 import { Row, Col } from "../../../containers/Gird";
 import TextHtml from "../../../containers/TextHtml";
 import Rating from "../../../containers/Rating";
@@ -9,10 +9,7 @@ import Container from "../../../containers/Container";
 
 import { timeAgo } from "../../../utils/time";
 
-import {
-  margin,
-  padding,
-} from "../../../Areas/Common/components/config/spacing";
+import { margin, padding } from "../../../components/config/spacing";
 import { changeColor, changeSize } from "../../../utils/text-html";
 
 const CommentItem = ({ data, theme, tz }) => {

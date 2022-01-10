@@ -10,12 +10,9 @@ import { compose } from "redux";
 
 import FlashMessage from "react-native-flash-message";
 
-import {
-  darkColors,
-  getThemeLight,
-} from "./Areas/Common/components/config/colors";
+import { darkColors, getThemeLight } from "./components/config/colors";
 
-import { ThemeProvider } from "./Areas/Common/components";
+import { ThemeProvider } from "./components";
 import Router from "./navigation/root-switch";
 import Unconnected from "./containers/Unconnected";
 

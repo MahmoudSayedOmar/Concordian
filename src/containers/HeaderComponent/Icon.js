@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, TouchableOpacity } from "react-native";
-import { Icon as IconComponent } from "../../Areas/Common/components";
+import { Icon as IconComponent } from "../../components";
 import { useNavigation } from "@react-navigation/native";
 
 const Icon = ({ onPress, ...rest }) => {

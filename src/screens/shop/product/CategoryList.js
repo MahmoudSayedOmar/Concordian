@@ -1,12 +1,12 @@
 import React from "react";
 import unescape from "lodash/unescape";
 import { StyleSheet, ScrollView, TouchableOpacity, View } from "react-native";
-import { Text, withTheme } from "../../../Areas/Common/components";
+import { Text, withTheme } from "../../../components";
 import {
   margin,
   padding,
   borderRadius,
-} from "../../../Areas/Common/components/config/spacing";
+} from "../../../components/config/spacing";
 
 const CategoryList = ({ onPress, data, theme }) => {
   if (!data || data.length === 0) {

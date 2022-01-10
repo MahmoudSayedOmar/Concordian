@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { StyleSheet, View } from "react-native";
 
-import { Divider, Avatar, withTheme } from "../../Areas/Common/components";
+import { Divider, Avatar, withTheme } from "../../components";
 
-import { grey6 } from "../../Areas/Common/components/config/colors";
-import { margin } from "../../Areas/Common/components/config/spacing";
+import { grey6 } from "../../components/config/colors";
+import { margin } from "../../components/config/spacing";
 
 class Step extends Component {
   render() {

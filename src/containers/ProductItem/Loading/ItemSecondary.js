@@ -1,6 +1,6 @@
 import * as React from "react";
-import { ThemedView, ThemeConsumer } from "../../../Areas/Common/components";
-import { padding } from "../../../Areas/Common/components/config/spacing";
+import { ThemedView, ThemeConsumer } from "../../../components";
+import { padding } from "../../../components/config/spacing";
 
 function ItemSecondaryLoading(props) {
   const { height, style } = props;

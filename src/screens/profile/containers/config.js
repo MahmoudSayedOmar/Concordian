@@ -1,4 +1,4 @@
-import { grey5 } from "../../../Areas/Common/components/config/colors";
+import { grey5 } from "../../../components/config/colors";
 
 const listIcon = {
   setting: ["settings", "help-circle", "phone-call", "log-out"],

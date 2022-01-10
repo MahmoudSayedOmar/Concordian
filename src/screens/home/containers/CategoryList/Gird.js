@@ -3,10 +3,7 @@ import React from "react";
 import { StyleSheet, View, Dimensions } from "react-native";
 import CategoryItem from "../../../../containers/CategoryItem";
 
-import {
-  margin,
-  padding,
-} from "../../../../Areas/Common/components/config/spacing";
+import { margin, padding } from "../../../../components/config/spacing";
 import { isLineEndColumn } from "../../../../utils/func";
 
 const separator = padding.small;

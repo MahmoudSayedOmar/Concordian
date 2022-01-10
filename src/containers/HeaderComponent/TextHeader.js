@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, View, TouchableOpacity } from "react-native";
-import { Text } from "../../Areas/Common/components";
+import { Text } from "../../components";
 
 const TextHeader = ({
   title,

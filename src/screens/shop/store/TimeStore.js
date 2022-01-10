@@ -3,12 +3,9 @@ import split from "lodash/split";
 import includes from "lodash/includes";
 
 import { StyleSheet, ScrollView, View } from "react-native";
-import { Text, Icon, ThemeConsumer } from "../../../Areas/Common/components";
+import { Text, Icon, ThemeConsumer } from "../../../components";
 import Container from "../../../containers/Container";
-import {
-  margin,
-  padding,
-} from "../../../Areas/Common/components/config/spacing";
+import { margin, padding } from "../../../components/config/spacing";
 
 const iconStatus = {
   open: {

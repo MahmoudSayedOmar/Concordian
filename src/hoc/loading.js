@@ -1,5 +1,5 @@
 import { branch, renderComponent } from "recompose";
-import Loading from "../Areas/Common/components/Loading";
+import Loading from "../components/Loading";
 
 const isLoading = ({ loading }) => loading;
 

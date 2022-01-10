@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { withTranslation } from "react-i18next";
 
 import { StyleSheet, View, ScrollView, ActivityIndicator } from "react-native";
-import { Header, ThemedView } from "../../Areas/Common/components";
+import { Header, ThemedView } from "../../components";
 import Button from "../../containers/Button";
 import Container from "../../containers/Container";
 import { TextHeader, IconHeader } from "../../containers/HeaderComponent";
@@ -15,7 +15,7 @@ import { fetchReview } from "../../modules/product/actions";
 import { dataReviewSelector } from "../../modules/product/selectors";
 
 import { mainStack } from "../../config/navigator";
-import { margin, padding } from "../../Areas/Common/components/config/spacing";
+import { margin, padding } from "../../components/config/spacing";
 import { getSiteConfig } from "../../modules/common/selectors";
 
 class ReviewScreen extends React.Component {

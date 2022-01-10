@@ -21,7 +21,7 @@ import {
 } from "../../../modules/common/selectors";
 import { prepareProductItem } from "../../../utils/product";
 
-import { padding } from "../../../Areas/Common/components/config/spacing";
+import { padding } from "../../../components/config/spacing";
 
 const { width } = Dimensions.get("window");
 

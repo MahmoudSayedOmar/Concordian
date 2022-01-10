@@ -8,16 +8,13 @@ import { compose } from "redux";
 
 import InputSelectValue from "../../../containers/input/InputSelectValue";
 import Input from "../../../containers/input/Input";
-import { SearchBar, Modal, ListItem } from "../../../Areas/Common/components";
+import { SearchBar, Modal, ListItem } from "../../../components";
 
 import { countrySelector } from "../../../modules/common/selectors";
 import { fetchCountries } from "../../../modules/common/actions";
 
 import { fromCharCode } from "../../../utils/string";
-import {
-  padding,
-  margin,
-} from "../../../Areas/Common/components/config/spacing";
+import { padding, margin } from "../../../components/config/spacing";
 
 class InputCountry extends React.Component {
   constructor(props, context) {

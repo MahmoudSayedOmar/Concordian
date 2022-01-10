@@ -10,18 +10,13 @@ import {
   Platform,
 } from "react-native";
 import Carousel from "react-native-snap-carousel";
-import {
-  Text,
-  Avatar,
-  Image,
-  withTheme,
-} from "../../../../Areas/Common/components";
+import { Text, Avatar, Image, withTheme } from "../../../../components";
 import Container from "../../../../containers/Container";
 import Pagination from "../../../../containers/Pagination";
 
 import { languageSelector } from "../../../../modules/common/selectors";
 
-import { padding } from "../../../../Areas/Common/components/config/spacing";
+import { padding } from "../../../../components/config/spacing";
 
 const { width } = Dimensions.get("window");
 

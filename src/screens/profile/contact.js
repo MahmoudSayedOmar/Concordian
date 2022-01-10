@@ -8,7 +8,7 @@ import {
   Text,
   ThemedView,
   ThemeConsumer,
-} from "../../Areas/Common/components";
+} from "../../components";
 
 import { IconHeader } from "../../containers/HeaderComponent";
 
@@ -17,12 +17,8 @@ import {
   languageSelector,
 } from "../../modules/common/selectors";
 
-import { grey5 } from "../../Areas/Common/components/config/colors";
-import {
-  margin,
-  padding,
-  borderRadius,
-} from "../../Areas/Common/components/config/spacing";
+import { grey5 } from "../../components/config/colors";
+import { margin, padding, borderRadius } from "../../components/config/spacing";
 
 const { width } = Dimensions.get("window");
 

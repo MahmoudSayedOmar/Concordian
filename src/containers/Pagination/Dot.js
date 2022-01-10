@@ -1,7 +1,7 @@
 // @flow
 import * as React from "react";
 import { View } from "react-native";
-import { grey3 } from "../../Areas/Common/components/config/colors";
+import { grey3 } from "../../components/config/colors";
 
 type Props = {
   size?: number,

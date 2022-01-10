@@ -3,11 +3,11 @@ import { compose } from "redux";
 import { connect } from "react-redux";
 import { withTranslation } from "react-i18next";
 
-import { Button as ButtonCPN } from "../../../../Areas/Common/components";
+import { Button as ButtonCPN } from "../../../../components";
 import Container from "../../../../containers/Container";
 import { languageSelector } from "../../../../modules/common/selectors";
 
-import { black } from "../../../../Areas/Common/components/config/colors";
+import { black } from "../../../../components/config/colors";
 
 import action from "../../../../utils/action";
 

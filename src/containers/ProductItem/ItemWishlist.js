@@ -5,12 +5,7 @@ import { useTranslation } from "react-i18next";
 import { useNavigation } from "@react-navigation/native";
 import unescape from "lodash/unescape";
 import { StyleSheet, View, TouchableOpacity } from "react-native";
-import {
-  Image,
-  Text,
-  Button,
-  ThemeConsumer,
-} from "../../Areas/Common/components";
+import { Image, Text, Button, ThemeConsumer } from "../../components";
 import Price from "../Price";
 
 import { configsSelector } from "../../modules/common/selectors";
@@ -18,9 +13,9 @@ import { mainStack } from "../../config/navigator";
 import { withAddToCart } from "../../hoc/hoc-add-to-card";
 
 import { SIMPLE } from "../../config/product";
-import { padding, margin } from "../../Areas/Common/components/config/spacing";
-import { sizes } from "../../Areas/Common/components/config/fonts";
-import { white, black } from "../../Areas/Common/components/config/colors";
+import { padding, margin } from "../../components/config/spacing";
+import { sizes } from "../../components/config/fonts";
+import { white, black } from "../../components/config/colors";
 
 const stockStatusList = ["instock", "onbackorder"];
 

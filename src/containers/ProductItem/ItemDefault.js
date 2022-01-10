@@ -13,18 +13,15 @@ import {
   TouchableOpacity,
   ActivityIndicator,
 } from "react-native";
-import { withTheme, Image, Badge, Text } from "../../Areas/Common/components";
+import { withTheme, Image, Badge, Text } from "../../components";
 import WishListIcon from "../WishListIcon";
 import Price from "../Price";
 import Rating from "../Rating";
 
 import { configsSelector } from "../../modules/common/selectors";
 
-import { white, black } from "../../Areas/Common/components/config/colors";
-import {
-  borderRadius,
-  margin,
-} from "../../Areas/Common/components/config/spacing";
+import { white, black } from "../../components/config/colors";
+import { borderRadius, margin } from "../../components/config/spacing";
 import { mainStack } from "../../config/navigator";
 import { withAddToCart } from "../../hoc/hoc-add-to-card";
 

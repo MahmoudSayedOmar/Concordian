@@ -9,7 +9,7 @@ import { Restart } from "fiction-expo-restart";
 import isEmpty from "lodash/isEmpty";
 
 import { ScrollView, StyleSheet, Image, View, I18nManager } from "react-native";
-import { Text, ListItem, Modal } from "../../../Areas/Common/components";
+import { Text, ListItem, Modal } from "../../../components";
 import Button from "../../../containers/Button";
 
 import {
@@ -20,10 +20,7 @@ import { changeLanguage } from "../../../modules/common/actions";
 
 import i18n from "../../../config-i18n";
 
-import {
-  margin,
-  padding,
-} from "../../../Areas/Common/components/config/spacing";
+import { margin, padding } from "../../../components/config/spacing";
 
 /**
  * Component Language

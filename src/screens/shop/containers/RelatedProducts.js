@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import Heading from "../../../containers/Heading";
 import ProductList from "../../../screens/home/containers/ProductList";
 
-import { padding } from "../../../Areas/Common/components/config/spacing";
+import { padding } from "../../../components/config/spacing";
 
 function RelatedProducts({ data }) {
   const { t } = useTranslation();

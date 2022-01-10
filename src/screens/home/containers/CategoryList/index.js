@@ -16,7 +16,7 @@ import Row from "./Row";
 
 import { homeTabs } from "../../../../config/navigator";
 import { languageSelector } from "../../../../modules/common/selectors";
-import { padding } from "../../../../Areas/Common/components/config/spacing";
+import { padding } from "../../../../components/config/spacing";
 import { typeShowCategory } from "../../../../config/category";
 
 const initHeader = {

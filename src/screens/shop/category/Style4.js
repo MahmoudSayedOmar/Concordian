@@ -9,7 +9,7 @@ import {
   TouchableOpacity,
   Dimensions,
 } from "react-native";
-import { ThemedView, Text, Image } from "../../../Areas/Common/components";
+import { ThemedView, Text, Image } from "../../../components";
 import EmptyCategory from "./EmptyCategory";
 import ParentCategory from "./ParentCategory";
 
@@ -18,7 +18,7 @@ import {
   borderRadius,
   margin,
   padding,
-} from "../../../Areas/Common/components/config/spacing";
+} from "../../../components/config/spacing";
 import { excludeCategory } from "../../../utils/category";
 import { exclude_categories } from "../../../config/category";
 

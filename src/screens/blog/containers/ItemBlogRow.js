@@ -2,14 +2,14 @@ import React from "react";
 import { withNavigation } from "@react-navigation/compat";
 import unescape from "lodash/unescape";
 import { StyleSheet, View, TouchableOpacity } from "react-native";
-import { Image, Text, ThemedView } from "../../../Areas/Common/components";
+import { Image, Text, ThemedView } from "../../../components";
 import InfoViewer from "./InfoViewer";
 
 import {
   padding,
   margin,
   borderRadius,
-} from "../../../Areas/Common/components/config/spacing";
+} from "../../../components/config/spacing";
 import { timeAgo } from "../../../utils/time";
 import { mainStack } from "../../../config/navigator";
 

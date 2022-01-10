@@ -1,7 +1,7 @@
 // @flow
 import React from "react";
 import { ActivityIndicator, StyleSheet, View } from "react-native";
-import { withTheme } from "../../Areas/Common/components";
+import { withTheme } from "../../components";
 
 export default withTheme(({ theme, ...rest }) => (
   <View style={styles.container}>

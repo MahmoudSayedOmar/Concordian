@@ -1,12 +1,9 @@
 // @flow
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import { withTheme, Text } from "../Areas/Common/components";
+import { withTheme, Text } from "../components";
 
-import {
-  margin,
-  borderRadius,
-} from "../Areas/Common/components/config/spacing";
+import { margin, borderRadius } from "../components/config/spacing";
 
 type Props = {
   theme: {},

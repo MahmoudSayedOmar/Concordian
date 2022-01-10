@@ -10,7 +10,7 @@ import {
   productListLayout,
   colProductLayout,
 } from "../../../../config/product";
-import { padding } from "../../../../Areas/Common/components/config/spacing";
+import { padding } from "../../../../components/config/spacing";
 
 const { width } = Dimensions.get("window");
 

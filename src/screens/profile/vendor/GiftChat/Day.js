@@ -3,10 +3,10 @@ import PropTypes from "prop-types";
 import moment from "moment";
 
 import { StyleSheet } from "react-native";
-import { Text } from "../../../../Areas/Common/components";
+import { Text } from "../../../../components";
 
 import { isSameDay } from "react-native-gifted-chat/lib/utils";
-import { margin } from "../../../../Areas/Common/components/config/spacing";
+import { margin } from "../../../../components/config/spacing";
 
 class Day extends React.PureComponent {
   render() {

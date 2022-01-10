@@ -5,16 +5,13 @@ import { useTranslation } from "react-i18next";
 import { useNavigation } from "@react-navigation/native";
 import unescape from "lodash/unescape";
 import { StyleSheet, View, TouchableOpacity } from "react-native";
-import { Text, Image, ThemeConsumer } from "../../../Areas/Common/components";
+import { Text, Image, ThemeConsumer } from "../../../components";
 import WishListIcon from "../../../containers/WishListIcon";
 import Price from "../../../containers/Price";
 
 import Rating from "../../../containers/Rating";
 
-import {
-  margin,
-  padding,
-} from "../../../Areas/Common/components/config/spacing";
+import { margin, padding } from "../../../components/config/spacing";
 
 import { mainStack } from "../../../config/navigator";
 import { configsSelector } from "../../../modules/common/selectors";

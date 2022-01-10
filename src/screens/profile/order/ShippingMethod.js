@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "../../../Areas/Common/components";
+import { Text } from "../../../components";
 import ContainerView from "./ContainerView";
 import styles from "./styles";
 import currencyFormatter from "../../../utils/currency-formatter";

@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { withTranslation } from "react-i18next";
 import { WebView } from "react-native-webview";
 import { ActivityIndicator, StyleSheet, View } from "react-native";
-import { ThemedView, Header } from "../../Areas/Common/components";
+import { ThemedView, Header } from "../../components";
 import { TextHeader, IconHeader } from "../../containers/HeaderComponent";
 
 import { mainStack } from "../../config/navigator";

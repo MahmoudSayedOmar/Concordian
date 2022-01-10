@@ -1,10 +1,10 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import { Icon, withTheme } from "../../Areas/Common/components";
+import { Icon, withTheme } from "../../components";
 import InputBasic from "./InputBasic";
 import ViewLabel, { MIN_HEIGHT } from "../ViewLabel";
-import { grey4 } from "../../Areas/Common/components/config/colors";
-import { padding, margin } from "../../Areas/Common/components/config/spacing";
+import { grey4 } from "../../components/config/colors";
+import { padding, margin } from "../../components/config/spacing";
 
 class Input extends React.Component {
   constructor(props) {

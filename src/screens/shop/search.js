@@ -8,7 +8,7 @@ import { withTranslation } from "react-i18next";
 import fetch from "../../utils/fetch";
 import debounce from "lodash/debounce";
 
-import { SearchBar, ThemedView } from "../../Areas/Common/components";
+import { SearchBar, ThemedView } from "../../components";
 import SearchRecentItem from "./containers/SearchRecentItem";
 import SearchProductItem from "./containers/SearchProductItem";
 

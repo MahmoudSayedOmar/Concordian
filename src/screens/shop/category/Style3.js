@@ -21,8 +21,8 @@ import {
   borderRadius,
   margin,
   padding,
-} from "../../../Areas/Common/components/config/spacing";
-import { black, white } from "../../../Areas/Common/components/config/colors";
+} from "../../../components/config/spacing";
+import { black, white } from "../../../components/config/colors";
 import ButtonGroup from "../../../containers/ButtonGroup";
 import { excludeCategory } from "../../../utils/category";
 import { exclude_categories } from "../../../config/category";

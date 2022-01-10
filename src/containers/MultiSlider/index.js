@@ -10,7 +10,7 @@ import {
   I18nManager,
 } from "react-native";
 
-import { withTheme } from "../../Areas/Common/components";
+import { withTheme } from "../../components";
 
 import DefaultMarker from "./DefaultMarker";
 import { createArray, valueToPosition, positionToValue } from "./converters";

@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { StyleSheet, FlatList } from "react-native";
-import { Badge, ListItem } from "../../../Areas/Common/components";
+import { Badge, ListItem } from "../../../components";
 import Container from "../../../containers/Container";
 import Notification from "./Notification";
 import EmptyCategory from "./EmptyCategory";
@@ -10,8 +10,8 @@ import {
   borderRadius,
   margin,
   padding,
-} from "../../../Areas/Common/components/config/spacing";
-import { grey6 } from "../../../Areas/Common/components/config/colors";
+} from "../../../components/config/spacing";
+import { grey6 } from "../../../components/config/colors";
 import unescape from "lodash/unescape";
 import { excludeCategory } from "../../../utils/category";
 import { exclude_categories } from "../../../config/category";

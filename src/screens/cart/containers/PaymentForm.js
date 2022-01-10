@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { useNavigation } from "@react-navigation/native";
 
 import { StyleSheet, View, TouchableOpacity } from "react-native";
-import { Text } from "../../../Areas/Common/components";
+import { Text } from "../../../components";
 import Heading from "../../../containers/Heading";
 import Input from "../../../containers/input/Input";
 import TextHtml from "../../../containers/TextHtml";
@@ -19,13 +19,8 @@ import { mainStack } from "../../../config/navigator";
 
 import { fromCharCode } from "../../../utils/string";
 
-import {
-  margin,
-  padding,
-} from "../../../Areas/Common/components/config/spacing";
-import fonts, {
-  lineHeights,
-} from "../../../Areas/Common/components/config/fonts";
+import { margin, padding } from "../../../components/config/spacing";
+import fonts, { lineHeights } from "../../../components/config/fonts";
 
 function PaymentForm(props) {
   const { t } = useTranslation();

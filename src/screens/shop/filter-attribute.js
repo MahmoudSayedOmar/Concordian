@@ -5,7 +5,7 @@ import findIndex from "lodash/findIndex";
 import { connect } from "react-redux";
 import { withTranslation } from "react-i18next";
 
-import { ListItem } from "../../Areas/Common/components";
+import { ListItem } from "../../components";
 import Container from "../../containers/Container";
 import AttributeColor from "./containers/AttributeColor";
 import AttributeImage from "./containers/AttributeImage";

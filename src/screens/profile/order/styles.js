@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { lineHeights } from "../../../Areas/Common/components/config/fonts";
+import { lineHeights } from "../../../components/config/fonts";
 
 export default StyleSheet.create({
   text: {

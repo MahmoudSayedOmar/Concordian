@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "../../../Areas/Common/components";
+import { Text } from "../../../components";
 
 export default ({ product, ...rest }) => {
   const name = product

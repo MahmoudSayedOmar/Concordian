@@ -2,17 +2,13 @@
 import React from "react";
 import unescape from "lodash/unescape";
 import { StyleSheet, View, TouchableOpacity } from "react-native";
-import { Image, Text } from "../Areas/Common/components";
+import { Image, Text } from "../components";
 
 import { useNavigation } from "@react-navigation/native";
 
 import { mainStack } from "../config/navigator";
-import { red } from "../Areas/Common/components/config/colors";
-import {
-  borderRadius,
-  margin,
-  padding,
-} from "../Areas/Common/components/config/spacing";
+import { red } from "../components/config/colors";
+import { borderRadius, margin, padding } from "../components/config/spacing";
 
 type Props = {
   item: Object,

@@ -2,7 +2,7 @@ import React from "react";
 import { ScrollView } from "react-native";
 import CategoryItem from "../../../../containers/CategoryItem";
 
-import { padding } from "../../../../Areas/Common/components/config/spacing";
+import { padding } from "../../../../components/config/spacing";
 const separator = padding.large;
 
 const Row = ({ data, width, height, box, round, border, disableName }) => {

@@ -2,7 +2,7 @@ import React from "react";
 
 import { connect } from "react-redux";
 import { StatusBar } from "react-native";
-import { ThemedView } from "../Areas/Common/components";
+import { ThemedView } from "../components";
 import GetStartSwiper from "../containers/GetStartSwiper";
 import GetStartVideo from "../containers/GetStartVideo";
 

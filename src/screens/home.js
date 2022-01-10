@@ -6,7 +6,7 @@ import { DrawerActions } from "@react-navigation/native";
 
 import { ScrollView, View, Dimensions } from "react-native";
 
-import { ThemedView, Header } from "../Areas/Common/components";
+import { ThemedView, Header } from "../components";
 import { IconHeader, Logo, CartIcon } from "../containers/HeaderComponent";
 import ModalHomePopup from "../containers/ModalHomePopup";
 

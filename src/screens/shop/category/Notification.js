@@ -3,15 +3,12 @@ import { connect } from "react-redux";
 import { useTranslation } from "react-i18next";
 import { Map } from "immutable";
 import { StyleSheet, TouchableOpacity, ImageBackground } from "react-native";
-import { Text } from "../../../Areas/Common/components";
+import { Text } from "../../../components";
 import Container from "../../../containers/Container";
 
-import { black } from "../../../Areas/Common/components/config/colors";
-import { sizes } from "../../../Areas/Common/components/config/fonts";
-import {
-  borderRadius,
-  margin,
-} from "../../../Areas/Common/components/config/spacing";
+import { black } from "../../../components/config/colors";
+import { sizes } from "../../../components/config/fonts";
+import { borderRadius, margin } from "../../../components/config/spacing";
 import {
   getTemplateConfigSelector,
   languageSelector,

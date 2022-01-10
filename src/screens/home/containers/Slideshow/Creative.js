@@ -10,21 +10,18 @@ import {
   TouchableOpacity,
 } from "react-native";
 import Carousel from "react-native-snap-carousel";
-import { Text, Image, withTheme } from "../../../../Areas/Common/components";
+import { Text, Image, withTheme } from "../../../../components";
 import Container from "../../../../containers/Container";
 import Pagination from "../../../../containers/Pagination";
 
 import { languageSelector } from "../../../../modules/common/selectors";
 
-import {
-  white,
-  black,
-} from "../../../../Areas/Common/components/config/colors";
+import { white, black } from "../../../../components/config/colors";
 import {
   margin,
   padding,
   borderRadius,
-} from "../../../../Areas/Common/components/config/spacing";
+} from "../../../../components/config/spacing";
 
 const { width } = Dimensions.get("window");
 

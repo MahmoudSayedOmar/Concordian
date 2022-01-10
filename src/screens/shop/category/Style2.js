@@ -15,11 +15,8 @@ import ButtonGroup from "../../../containers/ButtonGroup";
 import Notification from "./Notification";
 import EmptyCategory from "./EmptyCategory";
 import { categorySelector } from "../../../modules/category/selectors";
-import {
-  borderRadius,
-  margin,
-} from "../../../Areas/Common/components/config/spacing";
-import { black } from "../../../Areas/Common/components/config/colors";
+import { borderRadius, margin } from "../../../components/config/spacing";
+import { black } from "../../../components/config/colors";
 import { excludeCategory } from "../../../utils/category";
 import { exclude_categories } from "../../../config/category";
 

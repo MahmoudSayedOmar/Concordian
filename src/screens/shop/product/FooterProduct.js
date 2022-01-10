@@ -4,7 +4,7 @@ import Container from "../../../containers/Container";
 import { Row, Col } from "../../../containers/Gird";
 import Button from "../../../containers/Button";
 
-import { margin } from "../../../Areas/Common/components/config/spacing";
+import { margin } from "../../../components/config/spacing";
 
 const FooterProduct = ({
   isAddToCart,

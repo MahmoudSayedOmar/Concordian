@@ -3,7 +3,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { withTranslation } from "react-i18next";
 import { Switch } from "react-native";
-import { Header, ListItem, ThemedView } from "../../Areas/Common/components";
+import { Header, ListItem, ThemedView } from "../../components";
 import {
   TextHeader,
   CartIcon,

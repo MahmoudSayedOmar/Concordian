@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { View, StyleSheet } from "react-native";
-import { Icon, Text, ThemeConsumer } from "../../../Areas/Common/components";
+import { Icon, Text, ThemeConsumer } from "../../../components";
 
 const valueTypeStock = {
   instock: {

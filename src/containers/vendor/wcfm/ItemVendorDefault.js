@@ -8,15 +8,12 @@ import {
   Share,
   ViewPropTypes,
 } from "react-native";
-import { Avatar, Image, Text, Icon } from "../../../Areas/Common/components";
+import { Avatar, Image, Text, Icon } from "../../../components";
 import Rating from "../../../containers/Rating";
 import OpacityView from "../../../containers/OpacityView";
 
-import { green, white } from "../../../Areas/Common/components/config/colors";
-import {
-  borderRadius,
-  margin,
-} from "../../../Areas/Common/components/config/spacing";
+import { green, white } from "../../../components/config/colors";
+import { borderRadius, margin } from "../../../components/config/spacing";
 import { API } from "../../../config/api";
 
 type Props = {

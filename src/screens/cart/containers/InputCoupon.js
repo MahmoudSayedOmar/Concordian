@@ -9,11 +9,7 @@ import {
   Image,
   ActivityIndicator,
 } from "react-native";
-import {
-  Text,
-  ThemeConsumer,
-  withTheme,
-} from "../../../Areas/Common/components";
+import { Text, ThemeConsumer, withTheme } from "../../../components";
 import Input from "../../../containers/input/InputBasic";
 import { MIN_HEIGHT } from "../../../containers/ViewLabel";
 
@@ -24,7 +20,7 @@ import {
   margin,
   padding,
   borderRadius,
-} from "../../../Areas/Common/components/config/spacing";
+} from "../../../components/config/spacing";
 
 function InputCoupon(props) {
   const { t } = useTranslation();

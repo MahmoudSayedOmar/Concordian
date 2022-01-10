@@ -1,8 +1,8 @@
 import React from "react";
 import unescape from "lodash/unescape";
 import { StyleSheet, ScrollView, TouchableOpacity } from "react-native";
-import { Text, ThemedView, withTheme } from "../../../Areas/Common/components";
-import { margin } from "../../../Areas/Common/components/config/spacing";
+import { Text, ThemedView, withTheme } from "../../../components";
+import { margin } from "../../../components/config/spacing";
 
 const ParentCategory = ({ data, selectVisit, onChange, theme, width }) => {
   return (

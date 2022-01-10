@@ -4,8 +4,8 @@ import concat from "lodash/concat";
 import { StyleSheet, View, Animated, ViewPropTypes } from "react-native";
 import Dot from "./Dot";
 
-import { grey3, grey5 } from "../../Areas/Common/components/config/colors";
-import { margin } from "../../Areas/Common/components/config/spacing";
+import { grey3, grey5 } from "../../components/config/colors";
+import { margin } from "../../components/config/spacing";
 
 type Props = {
   type?: "default" | "animated",

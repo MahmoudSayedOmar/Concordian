@@ -2,7 +2,7 @@ import React from "react";
 
 import { StyleSheet, View } from "react-native";
 
-import { padding } from "../Areas/Common/components/config/spacing";
+import { padding } from "../components/config/spacing";
 
 const Container = function ({ disable, style, children, ...rest }) {
   return (

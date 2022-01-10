@@ -1,10 +1,10 @@
 import React from "react";
 import { connect } from "react-redux";
 import { View, StyleSheet } from "react-native";
-import { Text, withTheme } from "../../../Areas/Common/components";
+import { Text, withTheme } from "../../../components";
 
 import { languageSelector } from "../../../modules/common/selectors";
-import { padding } from "../../../Areas/Common/components/config/spacing";
+import { padding } from "../../../components/config/spacing";
 
 const TextInfo = ({ fields, theme, language }) => {
   if (!fields || typeof fields !== "object" || Object.keys(fields).length < 1) {

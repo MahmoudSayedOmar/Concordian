@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import unescape from "lodash/unescape";
 import { withTranslation } from "react-i18next";
 import { StyleSheet, View } from "react-native";
-import { ThemedView } from "../../Areas/Common/components";
+import { ThemedView } from "../../components";
 
 import Search from "../../screens/home/containers/Search";
 import Style1 from "./category/Style1";
@@ -20,7 +20,7 @@ import {
   languageSelector,
 } from "../../modules/common/selectors";
 
-import { padding } from "../../Areas/Common/components/config/spacing";
+import { padding } from "../../components/config/spacing";
 
 import { categoryListType } from "../../config/category";
 

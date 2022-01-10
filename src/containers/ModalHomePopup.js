@@ -2,20 +2,16 @@ import React from "react";
 import { connect } from "react-redux";
 import isEqual from "lodash/isEqual";
 import { View, Modal, Image, StyleSheet } from "react-native";
-import { Text, Avatar, withTheme } from "../Areas/Common/components";
+import { Text, Avatar, withTheme } from "../components";
 import Button from "../containers/Button";
 import Container from "../containers/Container";
-import { black, white } from "../Areas/Common/components/config/colors";
-import {
-  borderRadius,
-  margin,
-  padding,
-} from "../Areas/Common/components/config/spacing";
+import { black, white } from "../components/config/colors";
+import { borderRadius, margin, padding } from "../components/config/spacing";
 import {
   popupHomeSelector,
   languageSelector,
 } from "../modules/common/selectors";
-import { sizes, lineHeights } from "../Areas/Common/components/config/fonts";
+import { sizes, lineHeights } from "../components/config/fonts";
 import action from "../utils/action";
 
 const getInfoText = (data, language = "en", size) => {

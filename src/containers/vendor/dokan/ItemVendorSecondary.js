@@ -12,13 +12,13 @@ import {
   Avatar,
   Icon,
   withTheme,
-} from "../../../Areas/Common/components";
-import { yellow } from "../../../Areas/Common/components/config/colors";
+} from "../../../components";
+import { yellow } from "../../../components/config/colors";
 import {
   margin,
   padding,
   borderRadius,
-} from "../../../Areas/Common/components/config/spacing";
+} from "../../../components/config/spacing";
 
 type Props = {
   store?: any,

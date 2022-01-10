@@ -1,6 +1,6 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
-import { ThemeConsumer } from "../../../Areas/Common/components";
+import { ThemeConsumer } from "../../../components";
 import Container from "../../../containers/Container";
 class Divider extends React.Component {
   render() {

@@ -1,13 +1,10 @@
 import React from "react";
 
 import { View } from "react-native";
-import { withTheme, Text } from "../../Areas/Common/components";
+import { withTheme, Text } from "../../components";
 import currencyFormatter from "currency-formatter";
 
-import {
-  padding,
-  borderRadius,
-} from "../../Areas/Common/components/config/spacing";
+import { padding, borderRadius } from "../../components/config/spacing";
 
 const WIDTH_CIRCLE = 19;
 const WIDTH_PREFIX = 70;

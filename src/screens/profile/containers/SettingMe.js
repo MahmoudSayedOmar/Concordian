@@ -2,14 +2,11 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 import { StyleSheet } from "react-native";
-import { Text, ListItem } from "../../../Areas/Common/components";
+import { Text, ListItem } from "../../../components";
 
-import { grey4 } from "../../../Areas/Common/components/config/colors";
+import { grey4 } from "../../../components/config/colors";
 import { icon, titleProps } from "./config";
-import {
-  margin,
-  padding,
-} from "../../../Areas/Common/components/config/spacing";
+import { margin, padding } from "../../../components/config/spacing";
 import { mainStack } from "../../../config/navigator";
 import { connect } from "react-redux";
 import { signOut } from "../../../modules/auth/actions";

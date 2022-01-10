@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { withTranslation } from "react-i18next";
-import { Header, ListItem, ThemedView } from "../../Areas/Common/components";
+import { Header, ListItem, ThemedView } from "../../components";
 import Container from "../../containers/Container";
 import {
   TextHeader,

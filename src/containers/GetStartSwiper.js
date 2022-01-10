@@ -8,11 +8,11 @@ import {
   Animated,
   Dimensions,
 } from "react-native";
-import { Button, Text } from "../Areas/Common/components";
+import { Button, Text } from "../components";
 import Container from "./Container";
 import Pagination from "./Pagination";
 
-import { margin } from "../Areas/Common/components/config/spacing";
+import { margin } from "../components/config/spacing";
 
 const { width } = Dimensions.get("window");
 const WIDTH_IMAGE = width;

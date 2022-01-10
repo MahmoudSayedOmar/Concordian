@@ -1,10 +1,10 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { ScrollView, StyleSheet } from "react-native";
-import { Text } from "../../../Areas/Common/components";
+import { Text } from "../../../components";
 import Container from "../../../containers/Container";
-import { margin } from "../../../Areas/Common/components/config/spacing";
-import { lineHeights } from "../../../Areas/Common/components/config";
+import { margin } from "../../../components/config/spacing";
+import { lineHeights } from "../../../components/config";
 
 const ContainerTerm = () => {
   const { t } = useTranslation();

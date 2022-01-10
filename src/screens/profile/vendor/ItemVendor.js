@@ -1,20 +1,12 @@
 import React from "react";
 
 import { StyleSheet, View, TouchableOpacity } from "react-native";
-import {
-  Avatar,
-  Text,
-  Badge,
-  withTheme,
-} from "../../../Areas/Common/components";
+import { Avatar, Text, Badge, withTheme } from "../../../components";
 import { Dot } from "../../../containers/Pagination";
 
-import { green } from "../../../Areas/Common/components/config/colors";
-import {
-  margin,
-  padding,
-} from "../../../Areas/Common/components/config/spacing";
-import { lineHeights } from "../../../Areas/Common/components/config/fonts";
+import { green } from "../../../components/config/colors";
+import { margin, padding } from "../../../components/config/spacing";
+import { lineHeights } from "../../../components/config/fonts";
 import NavigationService from "../../../utils/navigation";
 import { mainStack } from "../../../config/navigator";
 

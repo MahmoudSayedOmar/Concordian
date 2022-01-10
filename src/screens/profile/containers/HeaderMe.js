@@ -7,7 +7,7 @@ import truncate from "lodash/truncate";
 import isEqual from "lodash/isEqual";
 
 import { StyleSheet } from "react-native";
-import { Text, ListItem } from "../../../Areas/Common/components";
+import { Text, ListItem } from "../../../components";
 import Button from "../../../containers/Button";
 import Separator from "../../../containers/Separator";
 import { Row } from "../../../containers/Gird";
@@ -15,10 +15,7 @@ import { Row } from "../../../containers/Gird";
 import { authSelector } from "../../../modules/auth/selectors";
 
 import { mainStack, rootSwitch, authStack } from "../../../config/navigator";
-import {
-  margin,
-  padding,
-} from "../../../Areas/Common/components/config/spacing";
+import { margin, padding } from "../../../components/config/spacing";
 
 const HeaderMe = (props) => {
   const {

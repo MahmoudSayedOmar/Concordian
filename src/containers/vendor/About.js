@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import moment from "moment";
 
 import { View, StyleSheet, Linking, ScrollView } from "react-native";
-import { Text, Icon } from "../../Areas/Common/components";
+import { Text, Icon } from "../../components";
 import Container from "../../containers/Container";
 import SocialIcon from "../../containers/SocialIcon";
 
@@ -12,9 +12,9 @@ import { countrySelector } from "../../modules/common/selectors";
 import { fetchCountries } from "../../modules/common/actions";
 
 import { VENDOR } from "../../config/development";
-import { grey4 } from "../../Areas/Common/components/config/colors";
-import { margin } from "../../Areas/Common/components/config/spacing";
-import { lineHeights } from "../../Areas/Common/components/config/fonts";
+import { grey4 } from "../../components/config/colors";
+import { margin } from "../../components/config/spacing";
+import { lineHeights } from "../../components/config/fonts";
 
 const checkValue = (str) => {
   if (

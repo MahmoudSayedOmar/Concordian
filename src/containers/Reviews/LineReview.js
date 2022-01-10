@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import { withTheme } from "../../Areas/Common/components";
+import { withTheme } from "../../components";
 
 const HEIGHT = 6;
 

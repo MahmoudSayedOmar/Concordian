@@ -3,12 +3,12 @@ import React from "react";
 import { withTranslation } from "react-i18next";
 
 import { StyleSheet, ScrollView } from "react-native";
-import { ThemedView, Header } from "../../../Areas/Common/components";
+import { ThemedView, Header } from "../../../components";
 import Button from "../../../containers/Button";
 import Container from "../../../containers/Container";
 import { IconHeader, TextHeader } from "../../../containers/HeaderComponent";
 
-import { margin } from "../../../Areas/Common/components/config/spacing";
+import { margin } from "../../../components/config/spacing";
 
 const ViewRefine = ({ titleHeader, t, handleResult, clearAll, children }) => {
   const title = titleHeader ? titleHeader : t("common:text_refine");

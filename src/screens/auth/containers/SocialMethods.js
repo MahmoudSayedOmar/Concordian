@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { useNavigation } from "@react-navigation/native";
 
 import { StyleSheet, View, Platform } from "react-native";
-import { Loading } from "../../../Areas/Common/components";
+import { Loading } from "../../../components";
 import SocialIcon from "../../../containers/SocialIcon";
 
 // import {
@@ -25,7 +25,7 @@ import { authSelector } from "../../../modules/auth/selectors";
 
 import { authStack } from "../../../config/navigator";
 
-import { margin } from "../../../Areas/Common/components/config/spacing";
+import { margin } from "../../../components/config/spacing";
 import { configsSelector } from "../../../modules/common/selectors";
 import { GOOGLE_SIGN_IN_CONFIG } from "../../../config/auth";
 

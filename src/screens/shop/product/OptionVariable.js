@@ -3,7 +3,7 @@ import { StyleSheet, View } from "react-native";
 import VariationColor from "../../../containers/VariationColor";
 import VariationImage from "../../../containers/VariationImage";
 import VariationButton from "../../../containers/VariationButton";
-import { margin } from "../../../Areas/Common/components/config/spacing";
+import { margin } from "../../../components/config/spacing";
 
 const Option = (props) => {
   const { option, selected, disabled, type } = props;

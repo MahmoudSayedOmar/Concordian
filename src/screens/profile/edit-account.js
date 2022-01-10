@@ -5,7 +5,7 @@ import omit from "lodash/omit";
 import { withTranslation } from "react-i18next";
 
 import { StyleSheet, KeyboardAvoidingView, ScrollView } from "react-native";
-import { ThemedView, Header } from "../../Areas/Common/components";
+import { ThemedView, Header } from "../../components";
 import { TextHeader, IconHeader } from "../../containers/HeaderComponent";
 import Container from "../../containers/Container";
 import Input from "../../containers/input/Input";
@@ -15,7 +15,7 @@ import { authSelector } from "../../modules/auth/selectors";
 import { updateCustomer, updateUserSuccess } from "../../modules/auth/actions";
 import { validatorUpdateAccount } from "../../modules/auth/validator";
 
-import { margin } from "../../Areas/Common/components/config/spacing";
+import { margin } from "../../components/config/spacing";
 
 class EditAccount extends React.Component {
   constructor(props) {

@@ -10,12 +10,7 @@ import {
   Platform,
   TouchableOpacity,
 } from "react-native";
-import {
-  Text,
-  Image,
-  ThemedView,
-  withTheme,
-} from "../../../Areas/Common/components";
+import { Text, Image, ThemedView, withTheme } from "../../../components";
 import Carousel from "react-native-snap-carousel";
 
 import { mainStack } from "../../../config/navigator";
@@ -24,7 +19,7 @@ import {
   margin,
   padding,
   borderRadius,
-} from "../../../Areas/Common/components/config/spacing";
+} from "../../../components/config/spacing";
 import { timeAgo } from "../../../utils/time";
 
 const { width } = Dimensions.get("window");

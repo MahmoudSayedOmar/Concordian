@@ -7,12 +7,7 @@ import unescape from "lodash/unescape";
 import { useNavigation } from "@react-navigation/native";
 import { useTranslation } from "react-i18next";
 import { StyleSheet, View, ActivityIndicator, Linking } from "react-native";
-import {
-  ThemedView,
-  Button,
-  Text,
-  ThemeConsumer,
-} from "../../../Areas/Common/components";
+import { ThemedView, Button, Text, ThemeConsumer } from "../../../components";
 import Price from "../../../containers/Price";
 import Quantity from "../../../containers/Quantity";
 
@@ -30,10 +25,7 @@ import { handleError } from "../../../utils/error";
 import * as productTypes from "../../../config/product";
 import { prepareProductItem } from "../../../utils/product";
 import { mainStack } from "../../../config/navigator";
-import {
-  padding,
-  borderRadius,
-} from "../../../Areas/Common/components/config/spacing";
+import { padding, borderRadius } from "../../../components/config/spacing";
 import { checkQuantity } from "../../../utils/product";
 import { showMessage } from "react-native-flash-message";
 

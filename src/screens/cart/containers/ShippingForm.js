@@ -8,7 +8,7 @@ import { Row, Col } from "../../../containers/Gird";
 import Input from "../../../containers/input/Input";
 import InputCountry from "./InputCountry";
 
-import { margin } from "../../../Areas/Common/components/config/spacing";
+import { margin } from "../../../components/config/spacing";
 
 class ShippingAddress extends React.Component {
   constructor(props, context) {

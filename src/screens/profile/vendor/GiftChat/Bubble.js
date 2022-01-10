@@ -10,10 +10,7 @@ import { MessageImage } from "react-native-gifted-chat";
 import { isSameUser } from "react-native-gifted-chat/lib/utils";
 import MessageText from "./MessageText";
 
-import {
-  borderRadius,
-  padding,
-} from "../../../../Areas/Common/components/config/spacing";
+import { borderRadius, padding } from "../../../../components/config/spacing";
 
 import { isSameTime } from "./utils";
 const Color = {

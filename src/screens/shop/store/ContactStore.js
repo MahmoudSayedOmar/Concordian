@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { withTranslation } from "react-i18next";
 import { StyleSheet, ScrollView, KeyboardAvoidingView } from "react-native";
-import { Text, ThemeConsumer } from "../../../Areas/Common/components";
+import { Text, ThemeConsumer } from "../../../components";
 import Container from "../../../containers/Container";
 import Input from "../../../containers/input/Input";
 import Button from "../../../containers/Button";
@@ -13,7 +13,7 @@ import { validatorContact } from "../../../modules/vendor/validator";
 import { languageSelector } from "../../../modules/common/selectors";
 import { authSelector } from "../../../modules/auth/selectors";
 
-import { margin } from "../../../Areas/Common/components/config/spacing";
+import { margin } from "../../../components/config/spacing";
 
 import { changeColor } from "../../../utils/text-html";
 import { showMessage } from "react-native-flash-message";

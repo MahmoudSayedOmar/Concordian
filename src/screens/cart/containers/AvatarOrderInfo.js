@@ -1,14 +1,14 @@
-import React from 'react';
-import {connect} from 'react-redux';
-import {StyleSheet, Image, View} from 'react-native';
-import {Icon, ThemeConsumer} from '../../../Areas/Common/components';
-import OpacityView from '../../../containers/OpacityView';
-import {listImageSelector} from '../../../modules/common/selectors';
+import React from "react";
+import { connect } from "react-redux";
+import { StyleSheet, Image, View } from "react-native";
+import { Icon, ThemeConsumer } from "../../../components";
+import OpacityView from "../../../containers/OpacityView";
+import { listImageSelector } from "../../../modules/common/selectors";
 
-const AvatarOrderInfo = ({images}) => {
+const AvatarOrderInfo = ({ images }) => {
   return (
     <ThemeConsumer>
-      {({theme}) => (
+      {({ theme }) => (
         <View>
           <View style={styles.viewBackground}>
             <OpacityView
@@ -19,7 +19,7 @@ const AvatarOrderInfo = ({images}) => {
           </View>
           <View style={styles.viewIcon}>
             <Icon
-              name={'truck'}
+              name={"truck"}
               size={35}
               color={theme.colors.error}
               containerStyle={styles.icon}
@@ -38,11 +38,11 @@ const AvatarOrderInfo = ({images}) => {
 
 const styles = StyleSheet.create({
   viewBackground: {
-    position: 'absolute',
+    position: "absolute",
     top: 0,
     left: 0,
     right: 0,
-    alignItems: 'center',
+    alignItems: "center",
   },
   backgroundAvatar: {
     width: 95,
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
   },
   viewIcon: {
     height: 95,
-    justifyContent: 'center',
+    justifyContent: "center",
   },
   icon: {
     marginTop: 8.5,
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
     images: listImageSelector(state),
   };

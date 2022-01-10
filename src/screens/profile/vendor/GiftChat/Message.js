@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 import { View, StyleSheet } from "react-native";
-import { Avatar } from "../../../../Areas/Common/components";
+import { Avatar } from "../../../../components";
 import { SystemMessage } from "react-native-gifted-chat";
 import { isSameUser } from "react-native-gifted-chat/lib/utils";
 import Bubble from "./Bubble";
@@ -9,7 +9,7 @@ import Time from "./Time";
 import Day from "./Day";
 
 import { isSameTime } from "./utils";
-import { margin } from "../../../../Areas/Common/components/config/spacing";
+import { margin } from "../../../../components/config/spacing";
 
 const styleTime = {
   marginBottom: margin.small + 1,

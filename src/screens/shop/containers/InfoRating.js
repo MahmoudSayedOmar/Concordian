@@ -3,16 +3,13 @@ import { compose } from "redux";
 import { connect } from "react-redux";
 import { useTranslation } from "react-i18next";
 import { StyleSheet } from "react-native";
-import { Text, Avatar, withTheme } from "../../../Areas/Common/components";
+import { Text, Avatar, withTheme } from "../../../components";
 import Container from "../../../containers/Container";
 import Rating from "../../../containers/Rating";
 import ChartReview from "./ChartReview";
 import { dataRatingSelector } from "../../../modules/product/selectors";
-import { margin } from "../../../Areas/Common/components/config/spacing";
-import fonts, {
-  lineHeights,
-  sizes,
-} from "../../../Areas/Common/components/config/fonts";
+import { margin } from "../../../components/config/spacing";
+import fonts, { lineHeights, sizes } from "../../../components/config/fonts";
 
 const InfoRating = ({ dataRating: { rating, lists, total }, theme }) => {
   const { t } = useTranslation();

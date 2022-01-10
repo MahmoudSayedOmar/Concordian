@@ -10,7 +10,7 @@ import {
   Switch,
   ActivityIndicator,
 } from "react-native";
-import { Text, Button } from "../../../Areas/Common/components";
+import { Text, Button } from "../../../components";
 import Container from "../../../containers/Container";
 import { Row, Col } from "../../../containers/Gird";
 import Heading from "../../../containers/Heading";
@@ -38,11 +38,8 @@ import {
   shippingAddressInit,
 } from "../../../modules/auth/config";
 
-import { red } from "../../../Areas/Common/components/config/colors";
-import {
-  padding,
-  margin,
-} from "../../../Areas/Common/components/config/spacing";
+import { red } from "../../../components/config/colors";
+import { padding, margin } from "../../../components/config/spacing";
 
 function Shipping(props) {
   const { t } = useTranslation();

@@ -4,11 +4,11 @@ import { withTranslation } from "react-i18next";
 
 import Video from "react-native-video";
 import { StyleSheet, View, Dimensions, Image, Platform } from "react-native";
-import { Text } from "../Areas/Common/components";
+import { Text } from "../components";
 import OpacityView from "../containers/OpacityView";
 import Button from "../containers/Button";
 
-import { black, white } from "../Areas/Common/components/config/colors";
+import { black, white } from "../components/config/colors";
 
 import { authStack } from "../config/navigator";
 import NavigationServices from "../utils/navigation";

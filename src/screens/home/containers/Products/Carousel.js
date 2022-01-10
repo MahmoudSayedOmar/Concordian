@@ -2,7 +2,7 @@ import React from "react";
 import { ScrollView, View, Dimensions, Text } from "react-native";
 import ProductItem from "../../../../containers/ProductItem";
 import ProductItemLoading from "../../../../containers/ProductItem/Loading";
-import { padding } from "../../../../Areas/Common/components/config/spacing";
+import { padding } from "../../../../components/config/spacing";
 
 const WIDTH_SCREEN = Dimensions.get("window").width;
 

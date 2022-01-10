@@ -10,7 +10,7 @@ import { Map, fromJS } from "immutable";
 
 import { View, StyleSheet } from "react-native";
 
-import { Header, ThemedView } from "../../Areas/Common/components";
+import { Header, ThemedView } from "../../components";
 import Container from "../../containers/Container";
 import {
   TextHeader,
@@ -37,7 +37,7 @@ import {
 } from "../../modules/product/actions";
 import { getProducts } from "../../modules/product/service";
 
-import { margin } from "../../Areas/Common/components/config/spacing";
+import { margin } from "../../components/config/spacing";
 import { mainStack, homeTabs } from "../../config/navigator";
 import { categorySelector } from "../../modules/category/selectors";
 

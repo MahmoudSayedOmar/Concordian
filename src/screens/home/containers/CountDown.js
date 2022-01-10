@@ -3,13 +3,13 @@ import { connect } from "react-redux";
 import moment from "moment";
 import floor from "lodash/floor";
 import { StyleSheet, View } from "react-native";
-import { Text, Icon } from "../../../Areas/Common/components";
+import { Text, Icon } from "../../../components";
 import Container from "../../../containers/Container";
 import { languageSelector } from "../../../modules/common/selectors";
 
-import { blue, grey5 } from "../../../Areas/Common/components/config/colors";
-import { sizes } from "../../../Areas/Common/components/config/fonts";
-import { margin } from "../../../Areas/Common/components/config/spacing";
+import { blue, grey5 } from "../../../components/config/colors";
+import { sizes } from "../../../components/config/fonts";
+import { margin } from "../../../components/config/spacing";
 
 class CountDown extends React.Component {
   constructor(props) {

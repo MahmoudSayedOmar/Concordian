@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigation } from "@react-navigation/native";
 import { StyleSheet, TouchableOpacity } from "react-native";
-import { Icon, Text, ThemedView } from "../../../Areas/Common/components";
+import { Icon, Text, ThemedView } from "../../../components";
 import { Row, Col } from "../../../containers/Gird";
 
 import { strDate, objectStatus } from "./config";
@@ -11,8 +11,8 @@ import {
   margin,
   padding,
   borderRadius,
-} from "../../../Areas/Common/components/config/spacing";
-import { lineHeights } from "../../../Areas/Common/components/config/fonts";
+} from "../../../components/config/spacing";
+import { lineHeights } from "../../../components/config/fonts";
 
 const OrderItem = ({ data, style, ...rest }) => {
   const { t } = useTranslation();

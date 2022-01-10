@@ -14,7 +14,7 @@ import { detailVendorSelector } from "../../modules/vendor/selectors";
 
 import { VENDOR } from "../../config/development";
 
-import { padding, margin } from "../../Areas/Common/components/config/spacing";
+import { padding, margin } from "../../components/config/spacing";
 
 const { width } = Dimensions.get("window");
 

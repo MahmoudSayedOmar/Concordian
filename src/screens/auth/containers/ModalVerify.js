@@ -9,12 +9,12 @@ import {
   ScrollView,
   ActivityIndicator,
 } from "react-native";
-import { Modal, Text, Button } from "../../../Areas/Common/components";
+import { Modal, Text, Button } from "../../../components";
 import Container from "../../../containers/Container";
 import InputCode from "../../../containers/input/InputCode";
 
-import { green } from "../../../Areas/Common/components/config/colors";
-import { margin } from "../../../Areas/Common/components/config/spacing";
+import { green } from "../../../components/config/colors";
+import { margin } from "../../../components/config/spacing";
 
 class ModalVerify extends React.Component {
   constructor(props) {

@@ -6,7 +6,7 @@ import { StyleSheet, TouchableOpacity, Animated } from "react-native";
 import { connect } from "react-redux";
 import { useNavigation } from "@react-navigation/native";
 import { ScreenProps } from "react-native-screens";
-import { Badge, Icon } from "../../Areas/Common/components";
+import { Badge, Icon } from "../../components";
 
 import { homeTabs } from "../../config/navigator";
 

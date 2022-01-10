@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import { ListItem, Icon } from "../Areas/Common/components";
-import { padding } from "../Areas/Common/components/config/spacing";
+import { ListItem, Icon } from "../components";
+import { padding } from "../components/config/spacing";
 import unescape from "lodash/unescape";
 
 import { mainStack } from "../config/navigator";

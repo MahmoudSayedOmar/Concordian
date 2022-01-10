@@ -1,25 +1,17 @@
 import React from "react";
 import { StyleSheet, TouchableOpacity } from "react-native";
 import { GiftedChat, InputToolbar } from "react-native-gifted-chat";
-import { Icon } from "../../../Areas/Common/components";
+import { Icon } from "../../../components";
 import Container from "../../../containers/Container";
 import Message from "./GiftChat/Message";
 
-import {
-  green,
-  grey1,
-  grey2,
-  grey5,
-} from "../../../Areas/Common/components/config/colors";
+import { green, grey1, grey2, grey5 } from "../../../components/config/colors";
 import {
   margin,
   padding,
   borderRadius,
-} from "../../../Areas/Common/components/config/spacing";
-import {
-  sizes,
-  lineHeights,
-} from "../../../Areas/Common/components/config/fonts";
+} from "../../../components/config/spacing";
+import { sizes, lineHeights } from "../../../components/config/fonts";
 
 class Chat extends React.Component {
   state = {

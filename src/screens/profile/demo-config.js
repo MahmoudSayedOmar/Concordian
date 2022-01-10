@@ -9,15 +9,15 @@ import {
   KeyboardAvoidingView,
   Linking,
 } from "react-native";
-import { Header, ThemedView, Text } from "../../Areas/Common/components";
+import { Header, ThemedView, Text } from "../../components";
 import { IconHeader, TextHeader } from "../../containers/HeaderComponent";
 import Input from "../../containers/input/Input";
 import Button from "../../containers/Button";
 import Container from "../../containers/Container";
 import { showMessage } from "react-native-flash-message";
 
-import { blue } from "../../Areas/Common/components/config/colors";
-import { margin } from "../../Areas/Common/components/config/spacing";
+import { blue } from "../../components/config/colors";
+import { margin } from "../../components/config/spacing";
 import { getDemoSelector } from "../../modules/common/selectors";
 
 import { API, CONSUMER_SECRET, CONSUMER_KEY } from "../../config/api";

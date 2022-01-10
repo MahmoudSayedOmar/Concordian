@@ -1,10 +1,10 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { StyleSheet, View } from "react-native";
-import { Divider, Text } from "../../../Areas/Common/components";
+import { Divider, Text } from "../../../components";
 import { Col, Row } from "../../../containers/Gird";
 import Button from "../../../containers/Button";
-import { padding } from "../../../Areas/Common/components/config/spacing";
+import { padding } from "../../../components/config/spacing";
 
 const FooterOrderInfo = ({
   shipping,

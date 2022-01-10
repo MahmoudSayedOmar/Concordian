@@ -1,13 +1,10 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
-import { Text, Avatar, withTheme } from "../../../Areas/Common/components";
+import { Text, Avatar, withTheme } from "../../../components";
 import Rating from "../../../containers/Rating";
 
 import { timeAgo } from "../../../utils/time";
-import {
-  margin,
-  padding,
-} from "../../../Areas/Common/components/config/spacing";
+import { margin, padding } from "../../../components/config/spacing";
 
 const ItemReview = ({ data, style, theme, tz }) => {
   if (!data) {

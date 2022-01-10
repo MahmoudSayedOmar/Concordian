@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ThemedView, ThemeConsumer } from "../../../Areas/Common/components";
+import { ThemedView, ThemeConsumer } from "../../../components";
 
 function ItemProductLoading(props) {
   const { style } = props;

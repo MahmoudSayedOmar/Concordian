@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet } from "react-native";
-import { Text, ThemedView } from "../../Areas/Common/components";
+import { Text, ThemedView } from "../../components";
 
 class FilterTag extends React.Component {
   render() {

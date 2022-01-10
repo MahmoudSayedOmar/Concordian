@@ -3,13 +3,13 @@ import React, { Component } from "react";
 import { withTranslation } from "react-i18next";
 import { WebView } from "react-native-webview";
 import { StyleSheet, ActivityIndicator, View } from "react-native";
-import { ThemedView } from "../../Areas/Common/components";
+import { ThemedView } from "../../components";
 import Button from "../../containers/Button";
 import Container from "../../containers/Container";
 import { homeTabs } from "../../config/navigator";
 import { connect } from "react-redux";
 import { clearCart } from "../../modules/cart/actions";
-import { margin } from "../../Areas/Common/components/config/spacing";
+import { margin } from "../../components/config/spacing";
 
 class WebviewThankYou extends Component {
   constructor(props, context) {

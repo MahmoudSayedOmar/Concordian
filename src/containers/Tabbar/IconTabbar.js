@@ -1,9 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
 import { StyleSheet, View } from "react-native";
-import { Icon } from "../../Areas/Common/components";
+import { Icon } from "../../components";
 import { Dot } from "../Pagination";
-import { red } from "../../Areas/Common/components/config/colors";
+import { red } from "../../components/config/colors";
 
 import { countWishListSelector } from "../../modules/common/selectors";
 import { countItemSelector } from "../../modules/cart/selectors";

@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import { Text } from "../../Areas/Common/components";
+import { Text } from "../../components";
 
 const ItemCart = () => {
   return (

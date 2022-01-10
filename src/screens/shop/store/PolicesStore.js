@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { StyleSheet, ScrollView } from "react-native";
-import { Text } from "../../../Areas/Common/components";
+import { Text } from "../../../components";
 import Container from "../../../containers/Container";
-import { lineHeights } from "../../../Areas/Common/components/config/fonts";
-import { margin } from "../../../Areas/Common/components/config/spacing";
+import { lineHeights } from "../../../components/config/fonts";
+import { margin } from "../../../components/config/spacing";
 class PolicesStore extends Component {
   render() {
     return (

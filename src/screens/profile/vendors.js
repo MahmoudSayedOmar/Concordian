@@ -1,15 +1,10 @@
 import React from "react";
 import { StyleSheet, View, Image, FlatList } from "react-native";
-import {
-  ThemedView,
-  Header,
-  Text,
-  SearchBar,
-} from "../../Areas/Common/components";
+import { ThemedView, Header, Text, SearchBar } from "../../components";
 import { IconHeader, TextHeader } from "../../containers/HeaderComponent";
 import Container from "../../containers/Container";
 import ItemVendor from "./vendor/ItemVendor";
-import { margin } from "../../Areas/Common/components/config/spacing";
+import { margin } from "../../components/config/spacing";
 
 import data from "../../mock/vendors";
 

@@ -2,16 +2,10 @@ import React, { Component } from "react";
 import { withTranslation } from "react-i18next";
 import { StyleSheet, View, FlatList } from "react-native";
 import PhoneInput from "react-native-phone-input";
-import {
-  Modal,
-  ListItem,
-  Image,
-  withTheme,
-  SearchBar,
-} from "../../Areas/Common/components";
+import { Modal, ListItem, Image, withTheme, SearchBar } from "../../components";
 import ViewLabel, { MIN_HEIGHT } from "../ViewLabel";
 
-import { padding } from "../../Areas/Common/components/config/spacing";
+import { padding } from "../../components/config/spacing";
 
 class InputMobile extends Component {
   constructor() {

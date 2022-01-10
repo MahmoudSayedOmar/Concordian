@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, ThemedView } from "../../Areas/Common/components";
+import { Header, ThemedView } from "../../components";
 import { IconHeader, TextHeader } from "../../containers/HeaderComponent";
 import Chat from "./vendor/Chat";
 

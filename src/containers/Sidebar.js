@@ -3,12 +3,12 @@ import { connect } from "react-redux";
 import { withTranslation } from "react-i18next";
 import { getStatusBarHeight } from "react-native-status-bar-height";
 import { StyleSheet, ScrollView } from "react-native";
-import { ThemedView, Text, ListItem } from "../Areas/Common/components";
+import { ThemedView, Text, ListItem } from "../components";
 import ItemCategoryMenu from "./ItemCategoryMenu";
 
 import { categorySelector } from "../modules/category/selectors";
 import { configsSelector, languageSelector } from "../modules/common/selectors";
-import { padding, margin } from "../Areas/Common/components/config/spacing";
+import { padding, margin } from "../components/config/spacing";
 
 import { homeTabs, mainStack } from "../config/navigator";
 import { excludeCategory } from "../utils/category";

@@ -9,12 +9,7 @@ import unescape from "lodash/unescape";
 import { withTranslation } from "react-i18next";
 import { showMessage } from "react-native-flash-message";
 import { StyleSheet, View, Dimensions, TouchableOpacity } from "react-native";
-import {
-  Text,
-  ListItem,
-  ThemedView,
-  ThemeConsumer,
-} from "../../Areas/Common/components";
+import { Text, ListItem, ThemedView, ThemeConsumer } from "../../components";
 import Price from "../../containers/Price";
 import Container from "../../containers/Container";
 import Rating from "../../containers/Rating";
@@ -52,7 +47,7 @@ import { withAddToCart } from "../../hoc/hoc-add-to-card";
 import { withLoading } from "../../hoc/loading";
 
 import { mainStack, homeTabs } from "../../config/navigator";
-import { margin } from "../../Areas/Common/components/config/spacing";
+import { margin } from "../../components/config/spacing";
 import * as productType from "../../config/product";
 
 import { handleError } from "../../utils/error";

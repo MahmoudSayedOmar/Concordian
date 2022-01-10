@@ -1,13 +1,10 @@
 import React from "react";
 import HTMLView from "react-native-htmlview";
-import { withTheme } from "../Areas/Common/components";
+import { withTheme } from "../components";
 
 import merge from "lodash/merge";
 
-import fonts, {
-  sizes,
-  lineHeights,
-} from "../Areas/Common/components/config/fonts";
+import fonts, { sizes, lineHeights } from "../components/config/fonts";
 
 const TextHtml = ({ value, theme, style, ...rest }) => {
   const valueHtml = `<div>${

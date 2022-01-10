@@ -9,12 +9,7 @@ import {
   StyleSheet,
   View,
 } from "react-native";
-import {
-  ThemedView,
-  Text,
-  Header,
-  ThemeConsumer,
-} from "../../Areas/Common/components";
+import { ThemedView, Text, Header, ThemeConsumer } from "../../components";
 import { TextHeader, IconHeader } from "../../containers/HeaderComponent";
 import Container from "../../containers/Container";
 import Input from "../../containers/input/Input";

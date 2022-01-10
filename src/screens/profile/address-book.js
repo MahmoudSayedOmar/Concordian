@@ -9,7 +9,7 @@ import {
   KeyboardAvoidingView,
   Platform,
 } from "react-native";
-import { Header, ThemedView } from "../../Areas/Common/components";
+import { Header, ThemedView } from "../../components";
 import ShippingForm from "../cart/containers/ShippingForm";
 import Container from "../../containers/Container";
 import Button from "../../containers/Button";
@@ -29,7 +29,7 @@ import {
 } from "../../modules/auth/actions";
 import { validatorAddress } from "../../modules/cart/validator";
 
-import { margin } from "../../Areas/Common/components/config/spacing";
+import { margin } from "../../components/config/spacing";
 import { showMessage } from "react-native-flash-message";
 
 class AddressBookScreen extends React.Component {

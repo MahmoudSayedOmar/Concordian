@@ -3,12 +3,12 @@ import { connect } from "react-redux";
 import { useTranslation } from "react-i18next";
 
 import { StyleSheet } from "react-native";
-import { ListItem, Text, withTheme } from "../../../Areas/Common/components";
+import { ListItem, Text, withTheme } from "../../../components";
 import Container from "../../../containers/Container";
 
 import { recentSearch } from "../../../modules/product/selectors";
 
-import { margin } from "../../../Areas/Common/components/config/spacing";
+import { margin } from "../../../components/config/spacing";
 
 const SearchRecentItem = (props) => {
   const { recent, handleRecentKeyword, theme } = props;

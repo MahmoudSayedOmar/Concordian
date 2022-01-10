@@ -3,7 +3,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { withTranslation } from "react-i18next";
 import { StyleSheet, View, FlatList, ActivityIndicator } from "react-native";
-import { Header, ThemedView } from "../../Areas/Common/components";
+import { Header, ThemedView } from "../../components";
 import {
   IconHeader,
   TextHeader,
@@ -19,7 +19,7 @@ import {
   languageSelector,
 } from "../../modules/common/selectors";
 
-import { padding, margin } from "../../Areas/Common/components/config/spacing";
+import { padding, margin } from "../../components/config/spacing";
 import { prepareBlogItem } from "../../utils/blog";
 
 class BlogList extends React.Component {

@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { withTranslation } from "react-i18next";
 import { StyleSheet, View, ActivityIndicator, FlatList } from "react-native";
-import { Header, ThemedView } from "../../Areas/Common/components";
+import { Header, ThemedView } from "../../components";
 import Empty from "../../containers/Empty";
 import {
   IconHeader,
@@ -17,7 +17,7 @@ import { languageSelector } from "../../modules/common/selectors";
 
 import { homeTabs } from "../../config/navigator";
 
-import { margin } from "../../Areas/Common/components/config/spacing";
+import { margin } from "../../components/config/spacing";
 
 class ListOrder extends React.Component {
   state = {

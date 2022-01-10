@@ -1,13 +1,10 @@
 import React from "react";
 
 import { StyleSheet } from "react-native";
-import { withTheme, SocialIcon } from "../Areas/Common/components";
+import { withTheme, SocialIcon } from "../components";
 
-import {
-  borderRadius,
-  padding,
-} from "../Areas/Common/components/config/spacing";
-import fonts, { sizes } from "../Areas/Common/components/config/fonts";
+import { borderRadius, padding } from "../components/config/spacing";
+import fonts, { sizes } from "../components/config/fonts";
 
 const ComponentSocialIcon = function ({ theme, style, ...rest }) {
   return (

@@ -10,14 +10,14 @@ import {
   ScrollView,
   Platform,
 } from "react-native";
-import { Loading } from "../../Areas/Common/components";
+import { Loading } from "../../components";
 import {
   ThemedView,
   Text,
   Header,
   Button,
   ThemeConsumer,
-} from "../../Areas/Common/components";
+} from "../../components";
 import { IconHeader, TextHeader } from "../../containers/HeaderComponent";
 import Container from "../../containers/Container";
 import InputMobile from "../../containers/input/InputMobile";
@@ -31,7 +31,7 @@ import { signInWithMobile } from "../../modules/auth/actions";
 
 import { showMessage } from "react-native-flash-message";
 
-import { margin } from "../../Areas/Common/components/config/spacing";
+import { margin } from "../../components/config/spacing";
 import { changeColor } from "../../utils/text-html";
 import { checkPhoneNumber } from "../../modules/auth/service";
 import { INITIAL_COUNTRY } from "../../config/config-input-phone-number";

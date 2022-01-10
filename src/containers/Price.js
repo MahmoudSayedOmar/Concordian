@@ -3,14 +3,11 @@ import { StyleSheet, View } from "react-native";
 
 import { useTranslation } from "react-i18next";
 
-import { Text, Badge } from "../Areas/Common/components";
+import { Text, Badge } from "../components";
 
-import { red, yellow } from "../Areas/Common/components/config/colors";
-import fonts, {
-  lineHeights,
-  sizes,
-} from "../Areas/Common/components/config/fonts";
-import { margin } from "../Areas/Common/components/config/spacing";
+import { red, yellow } from "../components/config/colors";
+import fonts, { lineHeights, sizes } from "../components/config/fonts";
+import { margin } from "../components/config/spacing";
 
 export function Price(props) {
   const { price_format, h4, type, isPercentSale, style } = props;

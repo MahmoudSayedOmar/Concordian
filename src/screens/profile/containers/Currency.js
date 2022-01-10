@@ -6,7 +6,7 @@ import { withTranslation } from "react-i18next";
 import upperCase from "lodash/upperCase";
 
 import { StyleSheet, View, ScrollView } from "react-native";
-import { Text, ListItem, Modal } from "../../../Areas/Common/components";
+import { Text, ListItem, Modal } from "../../../components";
 import Button from "../../../containers/Button";
 import {
   listCurrencySelector,
@@ -14,10 +14,7 @@ import {
 } from "../../../modules/common/selectors";
 import { changeCurrency } from "../../../modules/common/actions";
 
-import {
-  margin,
-  padding,
-} from "../../../Areas/Common/components/config/spacing";
+import { margin, padding } from "../../../components/config/spacing";
 import isEmpty from "lodash/isEmpty";
 
 /**

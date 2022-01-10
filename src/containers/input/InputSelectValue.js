@@ -1,9 +1,9 @@
 import React from "react";
 import { StyleSheet, TouchableOpacity } from "react-native";
-import { Icon, Text } from "../../Areas/Common/components";
+import { Icon, Text } from "../../components";
 import ViewLabel, { MIN_HEIGHT } from "../ViewLabel";
 
-import { margin } from "../../Areas/Common/components/config/spacing";
+import { margin } from "../../components/config/spacing";
 
 class InputSelectValue extends React.Component {
   render() {

@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React, { Component } from "react";
 import { StyleSheet } from "react-native";
-import { Text } from "../../../../Areas/Common/components";
+import { Text } from "../../../../components";
 import moment from "moment";
 
 const styles = {

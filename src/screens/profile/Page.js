@@ -3,11 +3,7 @@ import React from "react";
 import { compose } from "recompose";
 import { connect } from "react-redux";
 import { ScrollView } from "react-native";
-import {
-  Header,
-  ThemedView,
-  ThemeConsumer,
-} from "../../Areas/Common/components";
+import { Header, ThemedView, ThemeConsumer } from "../../components";
 import { IconHeader, TextHeader } from "../../containers/HeaderComponent";
 
 import { defaultPropsData, getSingleData } from "../../hoc/single-data";

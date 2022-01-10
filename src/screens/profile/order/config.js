@@ -2,12 +2,7 @@ import moment from "moment";
 import lowerCase from "lodash/lowerCase";
 import upperFirst from "lodash/upperFirst";
 
-import {
-  red,
-  green,
-  yellow,
-  teal,
-} from "../../../Areas/Common/components/config/colors";
+import { red, green, yellow, teal } from "../../../components/config/colors";
 
 export const strDate = (date) => {
   if (!date) {

@@ -1,6 +1,6 @@
 import React from "react";
 import { withTranslation } from "react-i18next";
-import { Header, ListItem, ThemedView } from "../../Areas/Common/components";
+import { Header, ListItem, ThemedView } from "../../components";
 import Rate from "react-native-rate";
 import options from "../../config/config-rate";
 import Container from "../../containers/Container";

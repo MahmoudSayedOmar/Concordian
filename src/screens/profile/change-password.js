@@ -2,12 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { withTranslation } from "react-i18next";
 import { StyleSheet, ScrollView, View } from "react-native";
-import {
-  Header,
-  Text,
-  ThemedView,
-  ThemeConsumer,
-} from "../../Areas/Common/components";
+import { Header, Text, ThemedView, ThemeConsumer } from "../../components";
 import Input from "../../containers/input/Input";
 import Container from "../../containers/Container";
 import Button from "../../containers/Button";
@@ -21,8 +16,8 @@ import {
 import { changePassword } from "../../modules/auth/actions";
 import { authSelector } from "../../modules/auth/selectors";
 
-import { margin } from "../../Areas/Common/components/config/spacing";
-import { lineHeights } from "../../Areas/Common/components/config/fonts";
+import { margin } from "../../components/config/spacing";
+import { lineHeights } from "../../components/config/fonts";
 
 import { changeColor } from "../../utils/text-html";
 

@@ -1,13 +1,13 @@
 import React from "react";
 import { connect } from "react-redux";
 import { StyleSheet, View } from "react-native";
-import { Icon, withTheme } from "../../../Areas/Common/components";
+import { Icon, withTheme } from "../../../components";
 
 import { LIST_SWITCH_PRODUCT } from "../../../modules/common/constants";
 import { switchProductView } from "../../../modules/common/actions";
 import { productViewSelector } from "../../../modules/common/selectors";
 
-import { margin } from "../../../Areas/Common/components/config/spacing";
+import { margin } from "../../../components/config/spacing";
 
 const SwitchProduct = ({ loading, theme, productView, switchView }) => {
   const selectIcon = theme.SwitchProduct.selectColor;

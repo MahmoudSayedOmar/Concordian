@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { StyleSheet, TouchableOpacity } from "react-native";
-import { Text, ThemedView } from "../Areas/Common/components";
+import { Text, ThemedView } from "../components";
 
-import {
-  margin,
-  borderRadius,
-} from "../Areas/Common/components/config/spacing";
+import { margin, borderRadius } from "../components/config/spacing";
 
 type Props = {
   value?: number,

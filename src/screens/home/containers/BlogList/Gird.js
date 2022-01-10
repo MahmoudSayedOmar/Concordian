@@ -3,7 +3,7 @@ import React from "react";
 import ItemBlog from "../../../../screens/blog/containers/ItemBlog";
 import ItemBlogLoading from "../../../../screens/blog/containers/ItemBlogLoading";
 
-import { padding } from "../../../../Areas/Common/components/config/spacing";
+import { padding } from "../../../../components/config/spacing";
 
 const BlogColumn = ({ data, loading, limit, width, height }) => {
   const widthImage = 137;

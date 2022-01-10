@@ -11,12 +11,7 @@ import {
   Alert,
 } from "react-native";
 import { SwipeListView } from "react-native-swipe-list-view";
-import {
-  ThemedView,
-  Header,
-  Button,
-  Loading,
-} from "../../Areas/Common/components";
+import { ThemedView, Header, Button, Loading } from "../../components";
 import { TextHeader } from "../../containers/HeaderComponent";
 import ButtonSwiper from "../../containers/ButtonSwiper";
 import Container from "../../containers/Container";
@@ -49,7 +44,7 @@ import { isLoginSelector } from "../../modules/auth/selectors";
 
 import { homeTabs, mainStack, authStack } from "../../config/navigator";
 
-import { margin } from "../../Areas/Common/components/config/spacing";
+import { margin } from "../../components/config/spacing";
 
 function CartScreen(props) {
   const { t } = useTranslation();

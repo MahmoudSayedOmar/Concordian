@@ -1,16 +1,13 @@
 import React from "react";
 import { connect } from "react-redux";
 import { StyleSheet, ScrollView } from "react-native";
-import { Text, ThemedView } from "../../../../Areas/Common/components";
+import { Text, ThemedView } from "../../../../components";
 import Container from "../../../../containers/Container";
 import TestimonialItem1 from "./Style1";
 import TestimonialItem2 from "./Style2";
 
 import { languageSelector } from "../../../../modules/common/selectors";
-import {
-  borderRadius,
-  padding,
-} from "../../../../Areas/Common/components/config/spacing";
+import { borderRadius, padding } from "../../../../components/config/spacing";
 
 class Testimonials extends React.Component {
   render() {

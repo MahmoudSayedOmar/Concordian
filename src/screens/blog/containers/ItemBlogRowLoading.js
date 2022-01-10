@@ -1,6 +1,6 @@
 import * as React from "react";
-import { ThemedView } from "../../../Areas/Common/components";
-import { borderRadius } from "../../../Areas/Common/components/config/spacing";
+import { ThemedView } from "../../../components";
+import { borderRadius } from "../../../components/config/spacing";
 
 function ItemBlogRowLoading(props) {
   const { width, height, style } = props;

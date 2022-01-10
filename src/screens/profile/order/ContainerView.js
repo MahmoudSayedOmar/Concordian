@@ -1,10 +1,7 @@
 import React from "react";
-import { Text, withTheme } from "../../../Areas/Common/components";
+import { Text, withTheme } from "../../../components";
 import Container from "../../../containers/Container";
-import {
-  padding,
-  margin,
-} from "../../../Areas/Common/components/config/spacing";
+import { padding, margin } from "../../../components/config/spacing";
 
 const ContainerView = ({
   style,

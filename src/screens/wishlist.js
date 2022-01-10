@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { withTranslation } from "react-i18next";
 import isEqual from "lodash/isEqual";
 import { StyleSheet, View, ActivityIndicator, I18nManager } from "react-native";
-import { Header, ThemedView } from "../Areas/Common/components";
+import { Header, ThemedView } from "../components";
 import { SwipeListView } from "react-native-swipe-list-view";
 import ProductItem from "../containers/ProductItem";
 import { TextHeader, CartIcon } from "../containers/HeaderComponent";
@@ -22,7 +22,7 @@ import {
   countWishListSelector,
 } from "../modules/common/selectors";
 
-import { margin } from "../Areas/Common/components/config/spacing";
+import { margin } from "../components/config/spacing";
 import { homeTabs } from "../config/navigator";
 
 class WishListScreen extends React.Component {

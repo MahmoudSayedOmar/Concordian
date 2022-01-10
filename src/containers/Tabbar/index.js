@@ -3,20 +3,16 @@ import React from "react";
 import { withTranslation } from "react-i18next";
 import { connect } from "react-redux";
 import { TouchableOpacity, StyleSheet } from "react-native";
-import {
-  Text,
-  SafeAreaView,
-  ThemeConsumer,
-} from "../../Areas/Common/components";
+import { Text, SafeAreaView, ThemeConsumer } from "../../components";
 import IconTabbar from "./IconTabbar";
 
 import { homeTabs } from "../../config/navigator";
 
 import { configsSelector } from "../../modules/common/selectors";
 
-import { grey5 } from "../../Areas/Common/components/config/colors";
-import { sizes } from "../../Areas/Common/components/config/fonts";
-import { padding } from "../../Areas/Common/components/config/spacing";
+import { grey5 } from "../../components/config/colors";
+import { sizes } from "../../components/config/fonts";
+import { padding } from "../../components/config/spacing";
 
 const Tabbar = (props) => {
   const { configs, navigation, state, t } = props;

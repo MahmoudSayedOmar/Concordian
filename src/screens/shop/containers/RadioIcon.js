@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import { withTheme } from "../../../Areas/Common/components";
-import { grey2 } from "../../../Areas/Common/components/config/colors";
+import { withTheme } from "../../../components";
+import { grey2 } from "../../../components/config/colors";
 
 const RadioIcon = ({ isSelect, theme }) => {
   return (

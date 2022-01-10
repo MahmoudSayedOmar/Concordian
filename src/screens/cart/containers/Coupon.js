@@ -3,14 +3,10 @@ import React from "react";
 import { connect } from "react-redux";
 
 import { StyleSheet, View } from "react-native";
-import {
-  ListItem,
-  Avatar,
-  ThemeConsumer,
-} from "../../../Areas/Common/components";
+import { ListItem, Avatar, ThemeConsumer } from "../../../components";
 import InputCoupon from "./InputCoupon";
 
-import { margin } from "../../../Areas/Common/components/config/spacing";
+import { margin } from "../../../components/config/spacing";
 import { couponsAppliedSelector } from "../../../modules/cart/selectors";
 import { removeCoupon } from "../../../modules/cart/actions";
 

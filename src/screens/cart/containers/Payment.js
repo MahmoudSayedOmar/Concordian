@@ -11,7 +11,7 @@ import {
   Dimensions,
 } from "react-native";
 import WebView from "react-native-webview";
-import { Text, Button, Modal } from "../../../Areas/Common/components";
+import { Text, Button, Modal } from "../../../components";
 import { Col, Row } from "../../../containers/Gird";
 import Heading from "../../../containers/Heading";
 import Container from "../../../containers/Container";
@@ -41,12 +41,9 @@ import {
   checkout,
 } from "../../../modules/checkout/actions";
 
-import { red } from "../../../Areas/Common/components/config/colors";
-import fonts from "../../../Areas/Common/components/config/fonts";
-import {
-  padding,
-  margin,
-} from "../../../Areas/Common/components/config/spacing";
+import { red } from "../../../components/config/colors";
+import fonts from "../../../components/config/fonts";
+import { padding, margin } from "../../../components/config/spacing";
 
 const contents = {
   OrderInfo,

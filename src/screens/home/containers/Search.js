@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { TouchableOpacity, StyleSheet } from "react-native";
-import { Icon, Text, withTheme } from "../../../Areas/Common/components";
+import { Icon, Text, withTheme } from "../../../components";
 import Container from "../../../containers/Container";
 
 import { languageSelector } from "../../../modules/common/selectors";
@@ -11,7 +11,7 @@ import {
   borderRadius,
   margin,
   padding,
-} from "../../../Areas/Common/components/config/spacing";
+} from "../../../components/config/spacing";
 
 class Search extends React.Component {
   render() {

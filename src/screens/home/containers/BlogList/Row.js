@@ -4,7 +4,7 @@ import { ScrollView, View } from "react-native";
 import ItemBlogRow from "../../../../screens/blog/containers/ItemBlogRow";
 import ItemBlogRowLoading from "../../../../screens/blog/containers/ItemBlogRowLoading";
 
-import { padding } from "../../../../Areas/Common/components/config/spacing";
+import { padding } from "../../../../components/config/spacing";
 
 const BlogRow = ({ data, loading, limit, width, height, boxed, tz }) => {
   if (loading) {

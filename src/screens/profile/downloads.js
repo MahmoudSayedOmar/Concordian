@@ -12,18 +12,14 @@ import {
   PermissionsAndroid,
   Platform,
 } from "react-native";
-import { Header, ThemedView, Text, Icon } from "../../Areas/Common/components";
+import { Header, ThemedView, Text, Icon } from "../../components";
 import Empty from "../../containers/Empty";
 import {
   IconHeader,
   CartIcon,
   TextHeader,
 } from "../../containers/HeaderComponent";
-import {
-  margin,
-  padding,
-  borderRadius,
-} from "../../Areas/Common/components/config/spacing";
+import { margin, padding, borderRadius } from "../../components/config/spacing";
 import { authSelector } from "../../modules/auth/selectors";
 import { languageSelector } from "../../modules/common/selectors";
 import { showMessage } from "react-native-flash-message";
@@ -31,7 +27,7 @@ import { homeTabs } from "../../config/navigator";
 
 import { Row, Col } from "../../containers/Gird";
 import { getFilesDonwload } from "../../modules/auth/actions";
-import { lineHeights } from "../../Areas/Common/components/config/fonts";
+import { lineHeights } from "../../components/config/fonts";
 //import RNFetchBlob from "rn-fetch-blob";
 import * as Progress from "react-native-progress";
 import FileViewer from "react-native-file-viewer";

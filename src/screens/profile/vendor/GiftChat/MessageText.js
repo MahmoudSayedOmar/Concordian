@@ -1,11 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Text } from "../../../../Areas/Common/components";
+import { Text } from "../../../../components";
 
-import {
-  grey6,
-  white,
-} from "../../../../Areas/Common/components/config/colors";
+import { grey6, white } from "../../../../components/config/colors";
 
 const styles = {
   left: {

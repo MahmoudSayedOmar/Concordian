@@ -2,7 +2,7 @@ import React from "react";
 import { withTranslation } from "react-i18next";
 import { StyleSheet } from "react-native";
 import { WebView } from "react-native-webview";
-import { ThemedView, Header } from "../Areas/Common/components";
+import { ThemedView, Header } from "../components";
 import { IconHeader, TextHeader } from "../containers/HeaderComponent";
 
 class LinkingWebview extends React.Component {

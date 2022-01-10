@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { withTranslation } from "react-i18next";
 import { View, ScrollView, Image, KeyboardAvoidingView } from "react-native";
-import { Header, Text, ThemedView } from "../../Areas/Common/components";
+import { Header, Text, ThemedView } from "../../components";
 import Rating from "../../containers/Rating";
 import Input from "../../containers/input/Input";
 import Button from "../../containers/Button";
@@ -13,7 +13,7 @@ import { authSelector } from "../../modules/auth/selectors";
 import { dataReviewSelector } from "../../modules/product/selectors";
 import { addReview } from "../../modules/product/actions";
 
-import { margin } from "../../Areas/Common/components/config/spacing";
+import { margin } from "../../components/config/spacing";
 
 class WriteReviewScreen extends React.Component {
   constructor(props) {

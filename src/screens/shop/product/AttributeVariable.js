@@ -1,10 +1,10 @@
 import React from "react";
 import { fromJS } from "immutable";
 import { ScrollView, StyleSheet, TouchableOpacity } from "react-native";
-import { Text } from "../../../Areas/Common/components";
+import { Text } from "../../../components";
 import Option from "./OptionVariable";
 import { checkOption } from "../../../modules/product/helper";
-import { margin } from "../../../Areas/Common/components/config/spacing";
+import { margin } from "../../../components/config/spacing";
 
 class AttributeVariable extends React.Component {
   onSelectOption = (option) => {

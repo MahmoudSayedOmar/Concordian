@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigation } from "@react-navigation/native";
 import unescape from "lodash/unescape";
 import { StyleSheet, View, TouchableOpacity } from "react-native";
-import { withTheme, Text, Image } from "../../../Areas/Common/components";
+import { withTheme, Text, Image } from "../../../components";
 import InfoViewer from "./InfoViewer";
 
 import { mainStack } from "../../../config/navigator";
@@ -10,7 +10,7 @@ import {
   margin,
   padding,
   borderRadius,
-} from "../../../Areas/Common/components/config/spacing";
+} from "../../../components/config/spacing";
 
 import { timeAgo } from "../../../utils/time";
 

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { withTranslation } from "react-i18next";
 import { StyleSheet, ScrollView, View, Linking } from "react-native";
-import { Header, ThemedView, Text } from "../../Areas/Common/components";
+import { Header, ThemedView, Text } from "../../components";
 
 import HeaderMe from "./containers/HeaderMe";
 import SettingMe from "./containers/SettingMe";
@@ -18,8 +18,8 @@ import {
   languageSelector,
 } from "../../modules/common/selectors";
 
-import { grey5 } from "../../Areas/Common/components/config/colors";
-import { margin } from "../../Areas/Common/components/config/spacing";
+import { grey5 } from "../../components/config/colors";
+import { margin } from "../../components/config/spacing";
 
 class MeScreen extends Component {
   icon = (name) => {

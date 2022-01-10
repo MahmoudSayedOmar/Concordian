@@ -2,16 +2,11 @@ import React, { Component } from "react";
 import { withTranslation } from "react-i18next";
 import { StyleSheet, View, ScrollView } from "react-native";
 
-import {
-  Header,
-  Text,
-  ThemedView,
-  ThemeConsumer,
-} from "../../Areas/Common/components";
+import { Header, Text, ThemedView, ThemeConsumer } from "../../components";
 import Container from "../../containers/Container";
 import { Row } from "../../containers/Gird";
 import { TextHeader, IconHeader } from "../../containers/HeaderComponent";
-import { padding } from "../../Areas/Common/components/config/spacing";
+import { padding } from "../../components/config/spacing";
 
 class ProductAttribute extends Component {
   renderAttribute(attribute) {

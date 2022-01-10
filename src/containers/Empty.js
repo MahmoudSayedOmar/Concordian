@@ -2,10 +2,10 @@
 import React from "react";
 import { withTranslation } from "react-i18next";
 import { StyleSheet, View } from "react-native";
-import { Text, Avatar, withTheme } from "../Areas/Common/components";
+import { Text, Avatar, withTheme } from "../components";
 import Button from "./Button";
-import { red } from "../Areas/Common/components/config/colors";
-import { padding, margin } from "../Areas/Common/components/config/spacing";
+import { red } from "../components/config/colors";
+import { padding, margin } from "../components/config/spacing";
 
 type Props = {
   icon: string,

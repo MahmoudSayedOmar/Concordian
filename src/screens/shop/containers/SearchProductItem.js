@@ -1,10 +1,10 @@
 import React from "react";
 import unescape from "lodash/unescape";
 import { StyleSheet } from "react-native";
-import { ListItem, withTheme } from "../../../Areas/Common/components";
+import { ListItem, withTheme } from "../../../components";
 import Container from "../../../containers/Container";
 
-import { grey3 } from "../../../Areas/Common/components/config/colors";
+import { grey3 } from "../../../components/config/colors";
 
 const SearchProductItem = (props) => {
   const { data, handleProductPage, theme } = props;

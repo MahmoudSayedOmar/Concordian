@@ -3,9 +3,9 @@
 import React from "react";
 import unescape from "lodash/unescape";
 import { StyleSheet, View, TouchableOpacity, ScrollView } from "react-native";
-import { Text, Badge, withTheme } from "../Areas/Common/components";
-import { grey6 } from "../Areas/Common/components/config/colors";
-import { padding, margin } from "../Areas/Common/components/config/spacing";
+import { Text, Badge, withTheme } from "../components";
+import { grey6 } from "../components/config/colors";
+import { padding, margin } from "../components/config/spacing";
 
 type itemList = {
   name: string,

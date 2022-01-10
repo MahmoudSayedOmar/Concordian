@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, TouchableOpacity } from "react-native";
-import { withTheme, Icon } from "../Areas/Common/components";
+import { withTheme, Icon } from "../components";
 
 const ButtonSwiper = ({ type, style, theme, ...rest }) => {
   const { ButtonSwiper: colors } = theme;

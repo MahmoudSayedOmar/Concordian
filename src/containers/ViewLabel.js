@@ -1,15 +1,8 @@
 import React from "react";
 import { StyleSheet, View, Animated } from "react-native";
-import { Text, withTheme } from "../Areas/Common/components";
-import {
-  margin,
-  padding,
-  borderRadius,
-} from "../Areas/Common/components/config/spacing";
-import fonts, {
-  sizes,
-  lineHeights,
-} from "../Areas/Common/components/config/fonts";
+import { Text, withTheme } from "../components";
+import { margin, padding, borderRadius } from "../components/config/spacing";
+import fonts, { sizes, lineHeights } from "../components/config/fonts";
 
 const MIN_HEIGHT = 46;
 const TOP = 8;

@@ -2,18 +2,13 @@ import React from "react";
 import { withTranslation } from "react-i18next";
 import isEqual from "lodash/isEqual";
 import { StyleSheet, Modal, ScrollView } from "react-native";
-import {
-  ThemedView,
-  Text,
-  Header,
-  ListItem,
-} from "../../../Areas/Common/components";
+import { ThemedView, Text, Header, ListItem } from "../../../components";
 import { TextHeader, IconHeader } from "../../../containers/HeaderComponent";
 import RadioIcon from "../containers/RadioIcon";
 import Container from "../../../containers/Container";
 import Button from "../../../containers/Button";
 
-import { margin } from "../../../Areas/Common/components/config/spacing";
+import { margin } from "../../../components/config/spacing";
 
 class ModalFilter extends React.PureComponent {
   constructor(props) {

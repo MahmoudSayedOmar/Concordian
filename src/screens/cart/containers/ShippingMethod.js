@@ -6,16 +6,13 @@ import { View, ScrollView, StyleSheet } from "react-native";
 
 import merge from "lodash/merge";
 
-import { Text } from "../../../Areas/Common/components";
+import { Text } from "../../../components";
 import ChooseItem from "../../../containers/ChooseItem";
 import TextHtml from "../../../containers/TextHtml";
 
-import { green } from "../../../Areas/Common/components/config/colors";
-import {
-  margin,
-  padding,
-} from "../../../Areas/Common/components/config/spacing";
-import { lineHeights } from "../../../Areas/Common/components/config/fonts";
+import { green } from "../../../components/config/colors";
+import { margin, padding } from "../../../components/config/spacing";
+import { lineHeights } from "../../../components/config/fonts";
 
 import { changeFont, changeSize } from "../../../utils/text-html";
 

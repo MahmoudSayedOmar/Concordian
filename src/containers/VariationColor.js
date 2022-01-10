@@ -1,7 +1,7 @@
 // @flow
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import { withTheme, Icon } from "../Areas/Common/components";
+import { withTheme, Icon } from "../components";
 
 type Props = {
   theme: {},

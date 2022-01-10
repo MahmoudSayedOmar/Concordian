@@ -1,8 +1,5 @@
 import clone from "lodash/clone";
-import fonts, {
-  sizes,
-  lineHeights,
-} from "../Areas/Common/components/config/fonts";
+import fonts, { sizes, lineHeights } from "../components/config/fonts";
 
 export const changeSize = (type) => {
   if (!sizes[type]) {

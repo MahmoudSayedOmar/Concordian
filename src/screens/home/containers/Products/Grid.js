@@ -4,10 +4,7 @@ import ProductItem from "../../../../containers/ProductItem";
 import ProductItemLoading from "../../../../containers/ProductItem/Loading";
 
 import { isLineEndColumn } from "../../../../utils/func";
-import {
-  margin,
-  padding,
-} from "../../../../Areas/Common/components/config/spacing";
+import { margin, padding } from "../../../../components/config/spacing";
 const WIDTH_SCREEN = Dimensions.get("window").width;
 
 const Grid = ({

@@ -3,19 +3,13 @@ import split from "lodash/split";
 import unescape from "lodash/unescape";
 
 import { StyleSheet, View } from "react-native";
-import { Text, Image, ThemeConsumer } from "../../../Areas/Common/components";
+import { Text, Image, ThemeConsumer } from "../../../components";
 import { Row, Col } from "../../../containers/Gird";
 import Quantity from "../../../containers/Quantity";
 
-import { grey4 } from "../../../Areas/Common/components/config/colors";
-import {
-  lineHeights,
-  sizes,
-} from "../../../Areas/Common/components/config/fonts";
-import {
-  margin,
-  padding,
-} from "../../../Areas/Common/components/config/spacing";
+import { grey4 } from "../../../components/config/colors";
+import { lineHeights, sizes } from "../../../components/config/fonts";
+import { margin, padding } from "../../../components/config/spacing";
 
 import currencyFormatter from "../../../utils/currency-formatter";
 

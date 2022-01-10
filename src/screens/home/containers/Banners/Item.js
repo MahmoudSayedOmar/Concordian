@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, TouchableOpacity } from "react-native";
-import { Image } from "../../../../Areas/Common/components";
+import { Image } from "../../../../components";
 
 const ImageBanner = ({
   radius,

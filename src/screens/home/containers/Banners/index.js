@@ -12,7 +12,7 @@ import Empty from "./Empty";
 
 import { languageSelector } from "../../../../modules/common/selectors";
 
-import { padding } from "../../../../Areas/Common/components/config/spacing";
+import { padding } from "../../../../components/config/spacing";
 
 import { colBanner, typeViewBanner } from "./config";
 

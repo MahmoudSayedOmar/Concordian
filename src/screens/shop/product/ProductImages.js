@@ -12,18 +12,15 @@ import {
   Share,
   Platform,
 } from "react-native";
-import { Image, Icon } from "../../../Areas/Common/components";
+import { Image, Icon } from "../../../components";
 import ImageViewer from "react-native-image-zoom-viewer";
 import Pagination from "../../../containers/Pagination";
 import WishListIcon from "../../../containers/WishListIcon";
 import Container from "../../../containers/Container";
 
 import { getStatusBarHeight } from "react-native-status-bar-height";
-import { black, white } from "../../../Areas/Common/components/config/colors";
-import {
-  padding,
-  margin,
-} from "../../../Areas/Common/components/config/spacing";
+import { black, white } from "../../../components/config/colors";
+import { padding, margin } from "../../../components/config/spacing";
 
 const { width } = Dimensions.get("window");
 

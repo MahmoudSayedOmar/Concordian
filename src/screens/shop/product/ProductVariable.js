@@ -6,7 +6,7 @@ import {
   ActivityIndicator,
   TouchableOpacity,
 } from "react-native";
-import { Text } from "../../../Areas/Common/components";
+import { Text } from "../../../components";
 import AttributeVariable from "./AttributeVariable";
 
 import {
@@ -14,7 +14,7 @@ import {
   findVariation,
   prepareMetaData,
 } from "../../../modules/product/helper";
-import { margin } from "../../../Areas/Common/components/config/spacing";
+import { margin } from "../../../components/config/spacing";
 
 class ProductVariable extends React.Component {
   handleChange = (meta_data) => {

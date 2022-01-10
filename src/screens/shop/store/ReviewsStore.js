@@ -10,10 +10,7 @@ import { setLoadingReview } from "../../../modules/vendor/actions";
 import { getReviewByVendorId } from "../../../modules/vendor/service";
 import { isLoadingReviewSelector } from "../../../modules/vendor/selectors";
 
-import {
-  margin,
-  padding,
-} from "../../../Areas/Common/components/config/spacing";
+import { margin, padding } from "../../../components/config/spacing";
 import { mainStack } from "../../../config/navigator";
 import { getSiteConfig } from "../../../modules/common/selectors";
 

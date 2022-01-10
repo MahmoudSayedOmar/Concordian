@@ -9,11 +9,11 @@ import {
   View,
   TouchableOpacity,
 } from "react-native";
-import { Text, Image, withTheme, Badge } from "../../Areas/Common/components";
+import { Text, Image, withTheme, Badge } from "../../components";
 import Price from "../../containers/Price";
 import WishListIcon from "../../containers/WishListIcon";
 
-import { margin, padding } from "../../Areas/Common/components/config/spacing";
+import { margin, padding } from "../../components/config/spacing";
 import { mainStack } from "../../config/navigator";
 
 //   navigation,

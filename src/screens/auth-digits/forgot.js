@@ -8,7 +8,7 @@ import {
   ThemedView,
   Button,
   ThemeConsumer,
-} from "../../Areas/Common/components";
+} from "../../components";
 import Container from "../../containers/Container";
 import TextHtml from "../../containers/TextHtml";
 import Input from "../../containers/input/Input";
@@ -17,8 +17,8 @@ import { IconHeader, TextHeader } from "../../containers/HeaderComponent";
 import { forgotPassword } from "../../modules/auth/actions";
 import { authSelector } from "../../modules/auth/selectors";
 
-import { margin } from "../../Areas/Common/components/config/spacing";
-import { lineHeights } from "../../Areas/Common/components/config/fonts";
+import { margin } from "../../components/config/spacing";
+import { lineHeights } from "../../components/config/fonts";
 
 import { changeColor } from "../../utils/text-html";
 

@@ -2,19 +2,14 @@ import * as React from "react";
 import { useTranslation } from "react-i18next";
 
 import { StyleSheet, View } from "react-native";
-import {
-  Text,
-  Avatar,
-  Button,
-  ThemeConsumer,
-} from "../../../Areas/Common/components";
+import { Text, Avatar, Button, ThemeConsumer } from "../../../components";
 import Container from "../../../containers/Container";
 
 import { homeTabs } from "../../../config/navigator";
 
-import { white } from "../../../Areas/Common/components/config/colors";
-import { margin } from "../../../Areas/Common/components/config/spacing";
-import { lineHeights } from "../../../Areas/Common/components/config/fonts";
+import { white } from "../../../components/config/colors";
+import { margin } from "../../../components/config/spacing";
+import { lineHeights } from "../../../components/config/fonts";
 
 function Done(props) {
   const { t } = useTranslation();

@@ -1,7 +1,7 @@
 // @flow
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import { black } from "../Areas/Common/components/config/colors";
+import { black } from "../components/config/colors";
 type Props = {
   opacity?: number,
   bgColor?: string,

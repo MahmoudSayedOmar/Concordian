@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, View, ImageBackground } from "react-native";
-import { withTheme } from "../Areas/Common/components";
-import { borderRadius } from "../Areas/Common/components/config/spacing";
+import { withTheme } from "../components";
+import { borderRadius } from "../components/config/spacing";
 
 type Props = {
   theme: {},

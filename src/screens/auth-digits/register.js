@@ -17,7 +17,7 @@ import {
   ThemedView,
   Button,
   ThemeConsumer,
-} from "../../Areas/Common/components";
+} from "../../components";
 import Container from "../../containers/Container";
 import Input from "../../containers/input/Input";
 import InputMobile from "../../containers/input/InputMobile";
@@ -35,8 +35,8 @@ import {
 import { digitsSendOtp, digitsLogoutUser } from "../../modules/auth/service";
 
 import { authStack } from "../../config/navigator";
-import { margin, padding } from "../../Areas/Common/components/config/spacing";
-import { lineHeights } from "../../Areas/Common/components/config/fonts";
+import { margin, padding } from "../../components/config/spacing";
+import { lineHeights } from "../../components/config/fonts";
 import { changeColor } from "../../utils/text-html";
 import { showMessage } from "react-native-flash-message";
 import { INITIAL_COUNTRY } from "../../config/config-input-phone-number";

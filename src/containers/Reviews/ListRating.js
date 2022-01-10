@@ -2,11 +2,11 @@ import React from "react";
 import { withTranslation } from "react-i18next";
 
 import { View } from "react-native";
-import { Text } from "../../Areas/Common/components";
+import { Text } from "../../components";
 import { Row, Col } from "../../containers/Gird";
 import LineReview from "./LineReview";
 
-import { margin } from "../../Areas/Common/components/config/spacing";
+import { margin } from "../../components/config/spacing";
 
 class ListRating extends React.Component {
   constructor(props) {

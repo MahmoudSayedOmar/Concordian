@@ -1,10 +1,10 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import { Text, Image, withTheme } from "../../../../Areas/Common/components";
+import { Text, Image, withTheme } from "../../../../components";
 import Rating from "../../../../containers/Rating";
 
-import { sizes } from "../../../../Areas/Common/components/config/fonts";
-import { margin } from "../../../../Areas/Common/components/config/spacing";
+import { sizes } from "../../../../components/config/fonts";
+import { margin } from "../../../../components/config/spacing";
 
 const TestimonialItem2 = ({ item, language, style, theme }) => {
   if (!item) {

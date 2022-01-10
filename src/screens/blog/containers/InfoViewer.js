@@ -2,7 +2,7 @@ import React from "react";
 import unescape from "lodash/unescape";
 import { withTranslation } from "react-i18next";
 import { StyleSheet, View } from "react-native";
-import { Icon, Text, ThemeConsumer } from "../../../Areas/Common/components";
+import { Icon, Text, ThemeConsumer } from "../../../components";
 
 class InfoViewer extends React.Component {
   constructor(props) {

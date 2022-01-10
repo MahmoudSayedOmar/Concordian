@@ -3,13 +3,13 @@ import { connect } from "react-redux";
 import compact from "lodash/compact";
 import { withTranslation } from "react-i18next";
 import { View, ActivityIndicator, StyleSheet, FlatList } from "react-native";
-import { ThemedView, Header } from "../../Areas/Common/components";
+import { ThemedView, Header } from "../../components";
 import { TextHeader, IconHeader } from "../../containers/HeaderComponent";
 import { ItemVendor, ItemVendorLoading } from "../../containers/vendor";
 
 import { getVendors } from "../../modules/vendor/service";
 import { fetchVendorDetailSuccess } from "../../modules/vendor/actions";
-import { margin } from "../../Areas/Common/components/config/spacing";
+import { margin } from "../../components/config/spacing";
 import { mainStack } from "../../config/navigator";
 
 class Stores extends React.Component {

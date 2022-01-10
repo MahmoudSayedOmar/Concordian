@@ -2,9 +2,9 @@
 import React from "react";
 
 import { StyleSheet, TouchableOpacity, View } from "react-native";
-import { Text } from "../Areas/Common/components";
-import { padding } from "../Areas/Common/components/config/spacing";
-import { sizes } from "../Areas/Common/components/config/fonts";
+import { Text } from "../components";
+import { padding } from "../components/config/spacing";
+import { sizes } from "../components/config/fonts";
 
 type Props = {
   title: string,

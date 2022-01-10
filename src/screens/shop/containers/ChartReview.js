@@ -2,11 +2,11 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 import { View } from "react-native";
-import { Text } from "../../../Areas/Common/components";
+import { Text } from "../../../components";
 import { Row, Col } from "../../../containers/Gird";
 import LineReviewProduct from "./LineReviewProduct";
 
-import { margin } from "../../../Areas/Common/components/config/spacing";
+import { margin } from "../../../components/config/spacing";
 
 const TextVisit = ({ widthLeft, visit }) => {
   const { t } = useTranslation();

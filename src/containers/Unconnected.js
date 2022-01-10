@@ -1,8 +1,8 @@
 import React from "react";
 import { StyleSheet, Image } from "react-native";
-import { ThemedView } from "../Areas/Common/components";
+import { ThemedView } from "../components";
 import Empty from "./Empty";
-import { margin } from "../Areas/Common/components/config/spacing";
+import { margin } from "../components/config/spacing";
 
 const Unconnected = ({ clickTry }) => {
   return (

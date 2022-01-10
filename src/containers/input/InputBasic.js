@@ -1,11 +1,8 @@
 import React from "react";
 import { StyleSheet, TextInput, Platform, I18nManager } from "react-native";
-import { ThemeConsumer } from "../../Areas/Common/components";
-import fonts, {
-  lineHeights,
-  sizes,
-} from "../../Areas/Common/components/config/fonts";
-import { padding } from "../../Areas/Common/components/config/spacing";
+import { ThemeConsumer } from "../../components";
+import fonts, { lineHeights, sizes } from "../../components/config/fonts";
+import { padding } from "../../components/config/spacing";
 
 const InputBasic = ({
   placeholderTextColor,

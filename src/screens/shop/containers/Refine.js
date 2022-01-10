@@ -4,9 +4,9 @@ import { useTranslation } from "react-i18next";
 
 import { StyleSheet, TouchableOpacity } from "react-native";
 
-import { Icon, Text } from "../../../Areas/Common/components";
+import { Icon, Text } from "../../../components";
 
-import { margin } from "../../../Areas/Common/components/config/spacing";
+import { margin } from "../../../components/config/spacing";
 
 const Refine = ({ onPress }) => {
   const { t } = useTranslation();

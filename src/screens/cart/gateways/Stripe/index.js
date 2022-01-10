@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 
 import { View } from "react-native";
 import { WebView } from "react-native-webview";
-import { withTheme } from "../../../../Areas/Common/components";
+import { withTheme } from "../../../../components";
 
 import { PUBLISHABLE_KEY } from "../../../../config/stripe";
 

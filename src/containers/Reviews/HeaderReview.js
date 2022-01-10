@@ -2,13 +2,10 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { View, StyleSheet } from "react-native";
-import { Avatar, Text, ThemeConsumer } from "../../Areas/Common/components";
+import { Avatar, Text, ThemeConsumer } from "../../components";
 import Rating from "../Rating";
-import fonts, {
-  lineHeights,
-  sizes,
-} from "../../Areas/Common/components/config/fonts";
-import { margin } from "../../Areas/Common/components/config/spacing";
+import fonts, { lineHeights, sizes } from "../../components/config/fonts";
+import { margin } from "../../components/config/spacing";
 
 type Props = {
   rating: number | string,
