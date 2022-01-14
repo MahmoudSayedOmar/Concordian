@@ -160,7 +160,7 @@ class ProductImages extends Component {
             index={indexCurrency}
             imageUrls={images
               .map((image) => ({
-                url: image.get("../../.."),
+                url: image.get("src"),
               }))
               .toJS()}
             renderHeader={() => (
