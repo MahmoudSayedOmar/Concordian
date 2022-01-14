@@ -5,12 +5,9 @@ import { useNavigation } from "@react-navigation/native";
 import { StyleSheet, View, Platform } from "react-native";
 import { Loading } from "../../../components";
 import SocialIcon from "../../../containers/SocialIcon";
+import * as google from "expo-google-app-auth";
+import * as Facebook from "expo-facebook";
 
-// import {
-//   GoogleSignin,
-//   statusCodes,
-// } from "@react-native-community/google-signin";
-import { AccessToken, LoginManager } from "react-native-fbsdk";
 import appleAuth, {
   AppleAuthRequestOperation,
   AppleAuthRequestScope,
@@ -29,8 +26,6 @@ import { margin } from "../../../components/config/spacing";
 import { configsSelector } from "../../../modules/common/selectors";
 import { GOOGLE_SIGN_IN_CONFIG } from "../../../config/auth";
 
-//GoogleSignin.configure(GOOGLE_SIGN_IN_CONFIG);
-
 function SocialMethods(props) {
   const navigation = useNavigation();
   const {
@@ -43,23 +38,48 @@ function SocialMethods(props) {
     configs.toJS();
   const loginFacebook = async () => {
     try {
-      const loginFacebook = await LoginManager.logInWithPermissions([
-        "public_profile",
-        "email",
-      ]);
-      if (loginFacebook.isCancelled) {
-      } else {
-        AccessToken.getCurrentAccessToken().then((data) => {
-          const token = data.accessToken.toString();
-          dispatch(signInWithFacebook(token));
+      await Facebook.initializeAsync({
+        appId: "908287013165037",
+      });
+      const { type, token, expirationDate, permissions, declinedPermissions } =
+        await Facebook.logInWithReadPermissionsAsync({
+          permissions: ["public_profile", "email"],
         });
+      console.log("expirationDate", expirationDate);
+      console.log("permissions", permissions);
+      console.log("declinedPermissions", declinedPermissions);
+
+      if (type === "success") {
+        console.log(token);
+        // Get the user's name using Facebook's Graph API
+        dispatch(signInWithFacebook(token));
+      } else {
+        // type === 'cancel'
       }
     } catch (e) {
       console.log("Login fail with error: " + e);
     }
   };
 
-  const loginGoogle = async () => {};
+  const loginGoogle = async () => {
+    google
+      .logInAsync(GOOGLE_SIGN_IN_CONFIG)
+      .then((result) => {
+        dispatch(signInWithGoogle(result.idToken));
+      })
+      .catch((error) => {
+        console.log(error);
+        if (error.code === statusCodes.SIGN_IN_CANCELLED) {
+          // user cancelled the login flow
+        } else if (error.code === statusCodes.IN_PROGRESS) {
+          // operation (f.e. sign in) is in progress already
+        } else if (error.code === statusCodes.PLAY_SERVICES_NOT_AVAILABLE) {
+          // play services not available or outdated
+        } else {
+          // some other error happened
+        }
+      });
+  };
 
   const onAppleButtonPress = async () => {
     try {

@@ -2,8 +2,15 @@ import React from "react";
 
 import { connect } from "react-redux";
 import { withTranslation } from "react-i18next";
-import firebase from "@react-native-firebase/app";
+import {
+  getAuth,
+  onAuthStateChanged,
+  signInWithPhoneNumber,
+  RecaptchaVerifier,
+  PhoneAuthProvider,
+} from "firebase/auth";
 
+import { app } from "../../../firebase";
 import {
   StyleSheet,
   ScrollView,
@@ -43,6 +50,10 @@ import { changeColor } from "../../utils/text-html";
 import { showMessage } from "react-native-flash-message";
 import { INITIAL_COUNTRY } from "../../config/config-input-phone-number";
 import { formatPhoneWithCountryCode } from "../../utils/phone-formatter";
+import {
+  FirebaseRecaptchaVerifierModal,
+  FirebaseRecaptchaBanner,
+} from "expo-firebase-recaptcha";
 
 class RegisterScreen extends React.Component {
   constructor(props, context) {
@@ -69,10 +80,12 @@ class RegisterScreen extends React.Component {
       },
     };
     this.confirmation = null;
+    this.auth = getAuth(app);
+    this.recaptchaVerifier = React.createRef(null);
   }
 
   componentDidMount() {
-    this.unsubscribe = firebase.auth().onAuthStateChanged((user) => {
+    this.unsubscribe = onAuthStateChanged(this.auth, (user) => {
       if (user) {
         const { data } = this.state;
         this.setState({
@@ -107,7 +120,7 @@ class RegisterScreen extends React.Component {
     let payload = data;
     const { country_code } = data;
     if (enablePhoneNumber) {
-      const currentUser = firebase.auth().currentUser;
+      const currentUser = this.auth.currentUser;
 
       const user_phone_number =
         currentUser?._user?.phoneNumber ??
@@ -137,6 +150,7 @@ class RegisterScreen extends React.Component {
       // Register with phone number
       if (enablePhoneNumber) {
         // Get user phone number
+
         const user_phone_number = formatPhoneWithCountryCode(
           phone_number,
           country_code
@@ -145,13 +159,22 @@ class RegisterScreen extends React.Component {
           digits_phone: user_phone_number,
           type: "register",
         });
+
         if (!user) {
-          // Send Verify token
-          const confirmResult = await firebase
-            .auth()
-            .signInWithPhoneNumber(user_phone_number);
+          //Send Verify token
+          // const confirmResult = await signInWithPhoneNumber(
+          //   this.auth,
+          //   user_phone_number,
+          //   this.recaptchaVerifier.current
+          // );
+          const phoneProvider = new PhoneAuthProvider(this.auth);
+          const verificationId = await phoneProvider.verifyPhoneNumber(
+            user_phone_number,
+            this.recaptchaVerifier.current
+          );
+          console.log("aho ya joo", verificationId);
           this.setState({
-            confirmResult,
+            confirmResult: verificationId,
           });
         } else {
           this.register();
@@ -207,6 +230,10 @@ class RegisterScreen extends React.Component {
             <KeyboardAvoidingView behavior="height" style={styles.keyboard}>
               <ScrollView>
                 <Container>
+                  <FirebaseRecaptchaVerifierModal
+                    ref={this.recaptchaVerifier}
+                    firebaseConfig={app.options}
+                  />
                   {message ? (
                     <TextHtml
                       value={message}
@@ -288,6 +315,7 @@ class RegisterScreen extends React.Component {
                   >
                     {t("auth:text_already_account")}
                   </Text>
+
                   <ModalVerify
                     visible={visible}
                     type={"register"}

@@ -1,6 +1,11 @@
 import React from "react";
 import { connect } from "react-redux";
-import firebase from "@react-native-firebase/app";
+import {
+  getAuth,
+  onAuthStateChanged,
+  signInWithPhoneNumber,
+} from "firebase/auth";
+import { app } from "../../../firebase";
 import { withTranslation } from "react-i18next";
 import trim from "lodash/trim";
 
@@ -54,10 +59,11 @@ class LoginMobile extends React.Component {
       confirmResult: null,
     };
     this.unsubscribe = null;
+    this.auth = getAuth(app);
   }
 
   componentDidMount() {
-    this.unsubscribe = firebase.auth().onAuthStateChanged((user) => {
+    this.unsubscribe = onAuthStateChanged(this.auth, (user) => {
       if (user) {
         this.setState({
           user,
@@ -87,9 +93,7 @@ class LoginMobile extends React.Component {
         this.setState({
           visibleModal: false,
         });
-        const idTokenResult = await firebase
-          .auth()
-          .currentUser.getIdTokenResult();
+        const idTokenResult = await this.auth.currentUser.getIdTokenResult();
         this.props.dispatch(signInWithMobile(idTokenResult.token));
       }
     } catch (e) {
@@ -132,9 +136,10 @@ class LoginMobile extends React.Component {
         });
       } else {
         // Send Verify token
-        const confirmResult = await firebase
-          .auth()
-          .signInWithPhoneNumber(user_phone_number);
+        const confirmResult = await signInWithPhoneNumber(
+          this.auth,
+          user_phone_number
+        );
         this.setState({
           loading: false,
           confirmResult,

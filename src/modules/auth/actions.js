@@ -1,4 +1,4 @@
-import * as Actions from './constants';
+import * as Actions from "./constants";
 
 /**
  * Action login
@@ -6,7 +6,7 @@ import * as Actions from './constants';
  * @param password
  * @returns {{type: string, username: *, password: *}}
  */
-export function signInWithEmail({username, password}) {
+export function signInWithEmail({ username, password }) {
   return {
     type: Actions.SIGN_IN_WITH_EMAIL,
     username,
@@ -115,7 +115,7 @@ export function checkAuth() {
  * @param u_email
  * @returns {{type: string, payload: {password: *, email: *}}}
  */
-export function changeEmail({u_password, u_email}) {
+export function changeEmail({ u_password, u_email }) {
   return {
     type: Actions.CHANGE_EMAIL,
     payload: {

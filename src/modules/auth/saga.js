@@ -1,6 +1,5 @@
-import firebase from "@react-native-firebase/app";
+import firebase from "../../../firebase";
 //import { GoogleSignin } from "@react-native-community/google-signin";
-import { LoginManager } from "react-native-fbsdk";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { put, call, select, takeEvery } from "redux-saga/effects";
 import { showMessage } from "react-native-flash-message";
@@ -248,7 +247,7 @@ function* signInWithGoogleSaga({ payload }) {
 }
 
 /**
- * Sign in with Google
+ * Sign in with Facebook
  * @param payload
  * @returns {IterableIterator<CallEffect | *>}
  */

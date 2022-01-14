@@ -1,8 +1,8 @@
 import React from "react";
 import { withTranslation } from "react-i18next";
 import { showMessage } from "react-native-flash-message";
-import auth from "@react-native-firebase/auth";
-
+import { getAuth, signInWithPhoneNumber } from "firebase/auth";
+import { app } from "../../../../firebase";
 import {
   StyleSheet,
   KeyboardAvoidingView,
@@ -25,6 +25,7 @@ class ModalVerify extends React.Component {
       loadingResend: false,
       confirmation: props.confirmation,
     };
+    this.auth = getAuth(app);
   }
 
   clickVerifyOtp = () => {
@@ -69,7 +70,7 @@ class ModalVerify extends React.Component {
 
       const { phone } = this.props;
       if (phone) {
-        const confirmation = await auth().signInWithPhoneNumber(phone);
+        const confirmation = await signInWithPhoneNumber(this.auth, phone);
         if (confirmation && confirmation._verificationId) {
           this.setState({
             confirmation,
@@ -126,7 +127,6 @@ class ModalVerify extends React.Component {
   render() {
     const { loading, loadingResend } = this.state;
     const { visible, setModalVisible, t } = this.props;
-
     return (
       <Modal
         visible={visible}
