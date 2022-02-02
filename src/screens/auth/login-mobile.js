@@ -4,6 +4,9 @@ import {
   getAuth,
   onAuthStateChanged,
   signInWithPhoneNumber,
+  RecaptchaVerifier,
+  PhoneAuthProvider
+  ,firebase
 } from "firebase/auth";
 import { app } from "../../../firebase";
 import { withTranslation } from "react-i18next";
@@ -41,6 +44,10 @@ import { changeColor } from "../../utils/text-html";
 import { checkPhoneNumber } from "../../modules/auth/service";
 import { INITIAL_COUNTRY } from "../../config/config-input-phone-number";
 import { formatPhoneWithCountryCode } from "../../utils/phone-formatter";
+import {
+  FirebaseRecaptchaVerifierModal,
+} from "expo-firebase-recaptcha";
+import auth from '@react-native-firebase/auth';
 
 class LoginMobile extends React.Component {
   constructor(props) {
@@ -60,6 +67,8 @@ class LoginMobile extends React.Component {
     };
     this.unsubscribe = null;
     this.auth = getAuth(app);
+    this.recaptchaVerifier = React.createRef(null);
+
   }
 
   componentDidMount() {
@@ -93,8 +102,10 @@ class LoginMobile extends React.Component {
         this.setState({
           visibleModal: false,
         });
+
         const idTokenResult = await this.auth.currentUser.getIdTokenResult();
         this.props.dispatch(signInWithMobile(idTokenResult.token));
+
       }
     } catch (e) {
       showMessage({
@@ -127,7 +138,7 @@ class LoginMobile extends React.Component {
         digits_phone: user_phone_number,
         type: "login",
       });
-
+        
       // For device auto verify
       if (user) {
         this.handleLogin(true);
@@ -135,10 +146,14 @@ class LoginMobile extends React.Component {
           loading: false,
         });
       } else {
-        // Send Verify token
+    
+
+    
+
         const confirmResult = await signInWithPhoneNumber(
           this.auth,
-          user_phone_number
+          user_phone_number,
+          this.recaptchaVerifier.current
         );
         this.setState({
           loading: false,
@@ -146,6 +161,7 @@ class LoginMobile extends React.Component {
         });
       }
     } catch (e) {
+
       showMessage({
         message: e.message,
         type: "danger",
@@ -177,6 +193,10 @@ class LoginMobile extends React.Component {
         {({ theme }) => (
           <ThemedView isFullView>
             <Loading visible={pendingMobile} />
+            <FirebaseRecaptchaVerifierModal
+                    ref={this.recaptchaVerifier}
+                    firebaseConfig={app.options}
+                  />
             <Header
               leftComponent={<IconHeader />}
               centerComponent={
